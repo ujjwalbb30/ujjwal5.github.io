@@ -1,800 +1,876 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Ujjwal Kalkhande — Data Scientist, ML Engineer, Embodied AI Enthusiast">
+  <meta name="description" content="Ujjwal Kalkhande — Data Scientist · ML Engineer · Embodied AI">
   <meta name="author" content="Ujjwal Kalkhande">
-
   <title>Ujjwal Kalkhande</title>
 
-  <!-- Font Awesome -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Google Fonts: Space Grotesk + Inter + JetBrains Mono -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Base theme -->
   <link href="css/freelancer.css" rel="stylesheet">
-  <!-- Modern override -->
   <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">UJJWAL</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#WorkExperience">Experience</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Resume">Resume</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#SkillsInterests">Skills</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1 d-flex align-items-center">
-            <button id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
-          </li>
-        </ul>
+<!-- ══ Navbar ══════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">UJJWAL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger" href="#work">Experience</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger" href="#certifications">Certs</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger" href="#achievements">Awards</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger" href="#sports">Sports</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-2 rounded js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1 d-flex align-items-center">
+          <button id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ Hero ════════════════════════════════════════════════ -->
+<header class="masthead text-center" id="page-top">
+  <div class="container d-flex align-items-center flex-column">
+    <img class="masthead-avatar" src="portfolio_material/Introduction/portfolio_image.JPG" alt="Ujjwal Kalkhande">
+    <h1 class="masthead-heading">Ujjwal Kalkhande</h1>
+    <p class="hero-role">Data Scientist · ML Engineer · Embodied AI</p>
+    <p class="hero-bio">
+      Multidisciplinary data scientist with 4+ years building scalable ML pipelines, real-time 3D perception systems, and intelligent physical AI products. Currently at Enfuse.IO — previously Atos Z Data, Havells, Cranfield University.
+      <br><small style="color:var(--muted)">San Jose, California</small>
+    </p>
+    <div class="hero-cta">
+      <a class="btn-im-gold js-scroll-trigger" href="#work">
+        <i class="fas fa-briefcase"></i> View Experience
+      </a>
+      <a class="btn-im-outline" href="portfolio_material/Resume/Resume_Ujjwal.pdf" target="_blank" rel="noopener">
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <a class="btn-im-outline js-scroll-trigger" href="#contact">
+        <i class="fas fa-paper-plane"></i> Contact
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ══ Work Experience ══════════════════════════════════════ -->
+<section class="page-section bg-primary" id="work">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">// career</span>
+      <h2 class="section-title">Work Experience</h2>
+    </div>
+
+    <!-- Enfuse.IO -->
+    <div class="work-card" id="wc-enfuse">
+      <div class="scan-line"></div>
+      <div class="work-card-header" onclick="toggleWork('wc-enfuse')">
+        <img class="work-logo" src="portfolio_material/Work_Experience/enfuse_io_logo.png" alt="Enfuse.IO">
+        <div class="work-meta">
+          <p class="work-company">Enfuse.IO</p>
+          <p class="work-role">Data Scientist</p>
+          <p class="work-dates">July 2025 – Present</p>
+        </div>
+        <i class="fas fa-chevron-down work-chevron"></i>
+      </div>
+      <div class="work-body">
+        <div class="work-body-inner">
+          <p class="work-overview">
+            Engineering backend APIs and data-driven modules for AimsPlus, a multi-site Warehouse Management System handling 20K+ orders across 4+ locations daily.
+          </p>
+
+          <div class="work-project">
+            <p class="work-project-title">Package Planning Module</p>
+            <ul>
+              <li>Developed a high-volume Package Planning module integrated with Paccurate for cubing optimization, cartonization and palletization (single and multi-stage).</li>
+              <li>Determines which items go into which boxes, in what orientation, to optimize space along with hazardous material compliance.</li>
+              <li>Structured output feeds directly to floor workers or sorter/packing robots for automated pick-and-pack operations.</li>
+            </ul>
+          </div>
+
+          <div class="work-project">
+            <p class="work-project-title">End-to-End Shipping Label Pipeline</p>
+            <ul>
+              <li><strong>Rate Shopping &amp; Carrier Optimization:</strong> evaluated shipment attributes (dimensions, weight, origin/destination) to auto-select optimal carrier and service level.</li>
+              <li><strong>International Compliance:</strong> automated customs document generation using SKU-level pricing, HTS codes, and ECCNs for cross-border shipments.</li>
+              <li><strong>Insurance Procurement:</strong> automatically triggered coverage for high-value shipments exceeding declared value thresholds.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Hero / Masthead -->
-  <header class="masthead text-center" id="page-top">
-    <div class="container d-flex align-items-center flex-column">
+    <!-- Atos Z Data -->
+    <div class="work-card" id="wc-atos">
+      <div class="scan-line"></div>
+      <div class="work-card-header" onclick="toggleWork('wc-atos')">
+        <img class="work-logo" src="portfolio_material/Work_Experience/atos_z_data_logo.jpg" alt="Atos Z Data">
+        <div class="work-meta">
+          <p class="work-company">Atos Z Data Inc.</p>
+          <p class="work-role">Data Scientist</p>
+          <p class="work-dates">June 2022 – June 2025</p>
+        </div>
+        <i class="fas fa-chevron-down work-chevron"></i>
+      </div>
+      <div class="work-body">
+        <div class="work-body-inner">
+          <p class="work-overview">
+            Built real-time 3D perception, AR navigation, and retail localization systems deployable on edge devices, autonomous vehicles, and robots using modern computer vision and ML.
+          </p>
 
-      <img class="masthead-avatar" src="img/portfolio_image.png" alt="Ujjwal Kalkhande">
+          <div class="work-project">
+            <p class="work-project-title">Real-Time 3D Perception &amp; Localization — Mobile Platforms</p>
+            <ul>
+              <li>Developed a real-time shared 3D perception system deployable on autonomous vehicles, robots, and wearables using NVIDIA Jetson Orin.</li>
+              <li>Pipeline: 3D Gaussian Splatting (nerfstudio) as global environment representation → 6DGS for 6-DoF camera pose regression → YOLO for object detection → SAM for segmentation masks → back-projected into 3D relative to localized camera pose.</li>
+              <li>Applications: autonomous navigation, AR, warehouse robotics, search &amp; rescue, retail inventory management.</li>
+            </ul>
+          </div>
 
-      <h1 class="masthead-heading">Ujjwal Kalkhande</h1>
+          <div class="work-project">
+            <p class="work-project-title">Indoor Path Navigation in Augmented Reality</p>
+            <ul>
+              <li>Engineered an automated indoor navigation pipeline for AR-guided wayfinding, eliminating manual store mapping.</li>
+              <li>Pipeline: RandLA-Net point cloud segmentation (fine-tuned) → top-down 2D occupancy map → Neural A* pathfinding → path projected back into 3D as AR navigation overlay.</li>
+              <li>Reduced manual store mapping effort by 2+ hours per store through full automation of layout generation.</li>
+              <li>Applications: retail navigation, warehouse logistics, hospital wayfinding, emergency response.</li>
+            </ul>
+          </div>
 
-      <span class="role-label">Data Scientist · ML Engineer · Embodied AI Enthusiast</span>
+          <div class="work-project">
+            <p class="work-project-title">Retail Product Localization — BrainCorp</p>
+            <ul>
+              <li>Built an end-to-end system identifying precise aisle–shelf–slot position of any product for real-time inventory monitoring and planogram compliance.</li>
+              <li>Custom Gradio annotation tool for aisle-shelf-slot labeling → heuristic shelf detection via pixel intensity analysis → slot segmentation by product boundary detection → full Gradio debugging suite.</li>
+              <li>Hardened with unit tests for robustness across store layouts and lighting conditions.</li>
+              <li>Applications: inventory monitoring, planogram compliance, retail analytics, robotic restocking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <p class="masthead-subheading">
-        Punjab Engineering College &nbsp;·&nbsp; Mechanical Engineering &nbsp;·&nbsp; 2014–2018
+    <!-- Havells -->
+    <div class="work-card" id="wc-havells">
+      <div class="scan-line"></div>
+      <div class="work-card-header" onclick="toggleWork('wc-havells')">
+        <img class="work-logo" src="portfolio_material/Work_Experience/havells.png" alt="Havells India">
+        <div class="work-meta">
+          <p class="work-company">Havells India Ltd.</p>
+          <p class="work-role">Mechanical Design Engineer</p>
+          <p class="work-dates">June 2018 – June 2019</p>
+        </div>
+        <i class="fas fa-chevron-down work-chevron"></i>
+      </div>
+      <div class="work-body">
+        <div class="work-body-inner">
+          <p class="work-overview">
+            R&amp;D of pumps at the Center for Research and Innovation (CRI). Engaged in all phases of design — drafting, dimensioning, tolerancing, prototyping, and documentation across multiple pump product lines.
+          </p>
+
+          <img class="work-img" src="portfolio_material/Work_Experience/havellspump.PNG" alt="Havells Pump">
+
+          <div class="work-project">
+            <p class="work-project-title">Contaminant Ingress Prevention for Monoblock Pumps</p>
+            <ul>
+              <li>Developed the cheapest implementable design solution to counter contaminant ingress across all monoblock pump assembly designs.</li>
+              <li>New designs introduced a special sealing solution deployed across 14 pump SKUs.</li>
+              <li>Filed patent application <em>"Pump Set Motor Assembly For Preventing Contaminant Ingress"</em> (App. No. 201911005525, filed 12/02/2019, published 14/08/2020).</li>
+            </ul>
+          </div>
+
+          <div class="work-project">
+            <p class="work-project-title">Pumps R&amp;D Lab CAD Layout</p>
+            <ul>
+              <li>Aided Purchase Order Request finalization for the pumps testing and validation lab at CRI.</li>
+              <li>Prepared full CAD layout including testing tanks, tool tables, equipment fixtures, and pipeline layout.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cranfield -->
+    <div class="work-card" id="wc-cranfield">
+      <div class="scan-line"></div>
+      <div class="work-card-header" onclick="toggleWork('wc-cranfield')">
+        <img class="work-logo" src="portfolio_material/Work_Experience/Cranfield.png" alt="Cranfield University">
+        <div class="work-meta">
+          <p class="work-company">Cranfield University</p>
+          <p class="work-role">Visiting Researcher, AVEC</p>
+          <p class="work-dates">Feb 2017 – May 2017</p>
+        </div>
+        <i class="fas fa-chevron-down work-chevron"></i>
+      </div>
+      <div class="work-body">
+        <div class="work-body-inner">
+          <img class="work-img" src="portfolio_material/Work_Experience/hil.gif" alt="Hardware-In-Loop rig">
+          <div class="work-project">
+            <p class="work-project-title">Hardware-In-Loop Test Rig — EV Thermal Management System</p>
+            <ul>
+              <li>Worked at the Advanced Vehicle Engineering Centre (AVEC), SATM, on a HIL test rig for EV/Hybrid Vehicle Thermal Management Systems, funded by Arrival (formerly Charge Automotive).</li>
+              <li>Completed literature review, identified research gaps, and compared heat exchangers, thermal fluids, and DAQ systems.</li>
+              <li>Developed full CAD models of test rig and simulation chamber in CATIA V5, rendered in Keyshot for research and company presentations.</li>
+              <li>Aided in finalizing the Purchase Order Request (POR) for the lab setup.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ Education ════════════════════════════════════════════ -->
+<section class="page-section" id="education">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">// background</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <!-- UMBC -->
+    <div class="edu-card" id="ec-umbc">
+      <div class="edu-header" onclick="toggleEdu('ec-umbc')">
+        <div class="edu-logo-placeholder">UMBC</div>
+        <div class="edu-meta">
+          <p class="edu-degree">M.P.S. — Data Science</p>
+          <p class="edu-school">University of Maryland, Baltimore County</p>
+          <p class="edu-dates">2021 – 2022</p>
+        </div>
+        <i class="fas fa-chevron-down edu-chevron"></i>
+      </div>
+      <div class="edu-body">
+        <div class="edu-body-inner">
+
+          <p class="edu-sub-title">Coursework</p>
+          <p>Introduction to Data Science · Introduction to Machine Learning · Introduction to Data Analysis and ML · Introduction to NLP · Practical AI · Data Management · Big Data Processing · Ethical &amp; Legal Issues in DS · Engineering Management</p>
+
+          <p class="edu-sub-title">Internship — Atos Z Data Inc.</p>
+          <div class="edu-project">
+            <p class="edu-project-title">Data Science Intern</p>
+            <p>Developed functional-level monitoring framework for a novel NLP-based product. Surveyed 10+ SOTA unsupervised drift detection papers. Integrated monitoring in a containerized Kubeflow pipeline; refactored Python scripts to incorporate Prometheus-Grafana for production data observability.</p>
+          </div>
+
+          <p class="edu-sub-title">Projects</p>
+
+          <div class="edu-project">
+            <p class="edu-project-title">California Drought Analysis &amp; Prediction</p>
+            <p>Examined 21 years of meteorological and drought severity data (400K+ instances). Employed Random Forests + Voting Ensemble for drought detection (85% accuracy) and OneVsRest Classifier for intensity classification (73% F1-score) across 5 Palmer Drought Severity Index classes.</p>
+          </div>
+          <div class="edu-project">
+            <p class="edu-project-title">Twitter Sentiment Analysis &amp; Stock Market Prediction</p>
+            <p>Condensed 5-year tweet data (3M+ samples), computed sentiment via VADER &amp; TextBlob, established significance via Spearman Coefficient. Built LSTM multivariate time-series forecasting model combining price and sentiment — improved prediction error by 25%.</p>
+          </div>
+          <div class="edu-project">
+            <p class="edu-project-title">ASL Image Classification</p>
+            <p>Model performance comparison study for CNNs classifying 87,000 ASL images into 29 classes. Investigated kernel sizes, activation functions (ReLU, Swish, Mish), and image augmentation. Achieved 97.23% (non-augmented) and 82.44% (augmented) accuracy.</p>
+          </div>
+          <div class="edu-project">
+            <p class="edu-project-title">Document Classification — Multimodal (Image + Text)</p>
+            <p>Retrieved textual features via OCR and combined with image features for document classification, achieving 83.31% accuracy.</p>
+          </div>
+
+          <p class="edu-sub-title">Responsibilities</p>
+          <ul>
+            <li><strong>UMBC Global Ambassador</strong> — built communication lines with incoming international students, facilitated academic and social integration.</li>
+            <li><strong>Graduate Assistant</strong> — assisted professors with course content, grading, and one-on-one tutoring sessions.</li>
+            <li><strong>Student Manager, UMBC Basketball</strong> — supported coaching staff with practice coordination, player routines, and team operations.</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PEC -->
+    <div class="edu-card" id="ec-pec">
+      <div class="edu-header" onclick="toggleEdu('ec-pec')">
+        <img class="edu-logo" src="portfolio_material/Education/PEC.png" alt="PEC">
+        <div class="edu-meta">
+          <p class="edu-degree">B.Tech — Mechanical Engineering</p>
+          <p class="edu-school">Punjab Engineering College, Chandigarh</p>
+          <p class="edu-dates">2014 – 2018</p>
+        </div>
+        <i class="fas fa-chevron-down edu-chevron"></i>
+      </div>
+      <div class="edu-body">
+        <div class="edu-body-inner">
+
+          <p class="edu-sub-title">Research Internship — Cranfield University</p>
+          <div class="edu-project">
+            <p class="edu-project-title">AVEC, School of Aerospace, Transport and Manufacture</p>
+            <p>Mentored by Dr. Stefano Longo &amp; Dr. Manlio Morganti. Worked on development of HIL test rig for thermal management in Electric and Hybrid vehicles.</p>
+          </div>
+
+          <p class="edu-sub-title">Minor Project</p>
+          <div class="edu-project">
+            <img class="edu-img" src="portfolio_material/Education/minor_project.png" alt="All-Terrain Robot">
+            <p class="edu-project-title">Suspension-Equipped All-Terrain Robot</p>
+            <p>Modeled and fabricated a custom suspension-equipped robot with a pick-and-place gripper. DC motors for drive, Johnson motor and servo for gripper, Arduino Mega 800, LiPo 12V 2200mAh battery. Full CAD assembly in CATIA V5.</p>
+          </div>
+
+          <p class="edu-sub-title">Capstone Project</p>
+          <div class="edu-project">
+            <img class="edu-img" src="portfolio_material/Education/major_project.png" alt="Mechanical Charger">
+            <p class="edu-project-title">Portable Mechanical Battery Charger</p>
+            <p>Designed and fabricated a human-powered mechanical charger using a 1:27 compound gear train (3 pairs of 69T/23T spur gears) driving a dynamo, generating 12V output via a diode bridge rectifier.</p>
+          </div>
+
+          <p class="edu-sub-title">Society of Automotive Engineers</p>
+          <div class="edu-project">
+            <img class="edu-img" src="portfolio_material/Education/fsae.png" alt="FSAE SUPRA">
+            <p class="edu-project-title">SUPRA SAEINDIA 2016 — Buddh International Circuit</p>
+            <p>Developed and validated tubular space-frame chassis via structural and harmonic FEA. Designed gear shifter and bell cranks. Led Business Presentation event. National ranking: 29th of 145 teams.</p>
+          </div>
+
+          <p class="edu-sub-title">Key Coursework</p>
+          <p>Computer Programming · OOP · Mathematics · Mechanics · Fluid Mechanics · Material Science · Thermodynamics · Heat Transfer · Refrigeration &amp; Air Conditioning · Manufacturing Processes · Strength of Materials · Design of Mechanical Systems · Dynamics of Machines · Mechanical Vibration · Industrial Automation &amp; Robotics · CADD &amp; M · Automobile Engineering</p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ Certifications ═══════════════════════════════════════ -->
+<section class="page-section bg-primary" id="certifications">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">// learning</span>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+
+    <p class="cert-platform-title">Coursera</p>
+    <div class="cert-grid">
+
+      <div class="cert-flip">
+        <div class="cert-flip-inner">
+          <div class="cert-front">
+            <p class="cert-platform-tag">Coursera</p>
+            <p class="cert-title">Machine Learning</p>
+            <p class="cert-issuer">Stanford University · Dr. Andrew Ng</p>
+          </div>
+          <div class="cert-back">
+            <p class="cert-back-label">Topics</p>
+            <p class="cert-back-topics">Supervised learning (SVM, neural networks, parametric/non-parametric) · Unsupervised learning (clustering, dimensionality reduction, recommender systems) · Bias/variance theory · ML innovation best practices</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-flip">
+        <div class="cert-flip-inner">
+          <div class="cert-front">
+            <p class="cert-platform-tag">Coursera</p>
+            <p class="cert-title">Deep Learning Specialization</p>
+            <p class="cert-issuer">Stanford University · Dr. Andrew Ng</p>
+          </div>
+          <div class="cert-back">
+            <p class="cert-back-label">Courses</p>
+            <p class="cert-back-topics">Neural Networks &amp; Deep Learning · Hyperparameter Tuning, Regularization &amp; Optimization (Adam, batch norm, dropout) · ML Project Structuring · Convolutional Neural Networks (ResNets, object detection, neural style transfer)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-flip">
+        <div class="cert-flip-inner">
+          <div class="cert-front">
+            <p class="cert-platform-tag">Coursera</p>
+            <p class="cert-title">Business Analytics Specialization</p>
+            <p class="cert-issuer">University of Pennsylvania, Wharton</p>
+          </div>
+          <div class="cert-back">
+            <p class="cert-back-label">Courses</p>
+            <p class="cert-back-topics">Customer Analytics · Operations Analytics · People Analytics · Accounting Analytics · Business Analytics Capstone</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-flip">
+        <div class="cert-flip-inner">
+          <div class="cert-front">
+            <p class="cert-platform-tag">Coursera</p>
+            <p class="cert-title">Divide &amp; Conquer, Sorting &amp; Searching</p>
+            <p class="cert-issuer">Stanford University</p>
+          </div>
+          <div class="cert-back">
+            <p class="cert-back-label">Topics</p>
+            <p class="cert-back-topics">Asymptotic notation · Sorting &amp; searching · Divide &amp; conquer (master method, matrix multiplication, closest pair) · Randomized algorithms (QuickSort, contraction algorithm)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-flip">
+        <div class="cert-flip-inner">
+          <div class="cert-front">
+            <p class="cert-platform-tag">Coursera</p>
+            <p class="cert-title">Science of Exercise</p>
+            <p class="cert-issuer">University of Colorado Boulder</p>
+          </div>
+          <div class="cert-back">
+            <p class="cert-back-label">Topics</p>
+            <p class="cert-back-topics">Physiological responses to exercise · Carbohydrate, fat &amp; protein metabolism · Muscle fatigue &amp; soreness · Caloric expenditure &amp; BMI · Evidence for exercise in preventing heart disease, diabetes, cancer, and depression</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="cert-platform-title">DataCamp</p>
+    <div class="cert-grid">
+      <div class="cert-flip">
+        <div class="cert-flip-inner">
+          <div class="cert-front">
+            <p class="cert-platform-tag">DataCamp</p>
+            <p class="cert-title">Data Scientist with Python Track</p>
+            <p class="cert-issuer">26-course career track</p>
+          </div>
+          <div class="cert-back">
+            <p class="cert-back-label">Courses (selected)</p>
+            <p class="cert-back-topics">Python, pandas, scikit-learn, Bokeh, SQL, Statistical Thinking, Supervised &amp; Unsupervised Learning, Tree-Based Models, Deep Learning, Network Analysis, Shell, Conda</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="cert-platform-title">Udacity</p>
+    <div class="cert-grid">
+      <div class="cert-flip">
+        <div class="cert-flip-inner">
+          <div class="cert-front">
+            <p class="cert-platform-tag">Udacity</p>
+            <p class="cert-title">ML Engineer with Microsoft Azure</p>
+            <p class="cert-issuer">Nanodegree</p>
+          </div>
+          <div class="cert-back">
+            <p class="cert-back-label">Projects</p>
+            <p class="cert-back-topics">Optimizing an ML Pipeline in Azure · AutoML Classification through Azure</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="cert-platform-title">Anthropic</p>
+    <div class="cert-grid">
+      <div class="cert-flip">
+        <div class="cert-flip-inner">
+          <div class="cert-front">
+            <p class="cert-platform-tag">Anthropic</p>
+            <p class="cert-title">Claude 101</p>
+            <p class="cert-issuer">Anthropic</p>
+          </div>
+          <div class="cert-back">
+            <p class="cert-back-label">Topics</p>
+            <p class="cert-back-topics">Introduction to Claude's capabilities, prompt engineering fundamentals, responsible AI use</p>
+          </div>
+        </div>
+      </div>
+      <div class="cert-flip">
+        <div class="cert-flip-inner">
+          <div class="cert-front">
+            <p class="cert-platform-tag">Anthropic</p>
+            <p class="cert-title">Claude Code 101</p>
+            <p class="cert-issuer">Anthropic</p>
+          </div>
+          <div class="cert-back">
+            <p class="cert-back-label">Topics</p>
+            <p class="cert-back-topics">AI-assisted software engineering with Claude Code, agentic workflows, coding best practices</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ Achievements ═════════════════════════════════════════ -->
+<section class="page-section" id="achievements">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">// milestones</span>
+      <h2 class="section-title">Achievements</h2>
+    </div>
+
+    <div class="ach-grid">
+
+      <!-- Patent -->
+      <div class="ach-card">
+        <div class="ach-front">
+          <div class="ach-icon"><i class="fas fa-certificate"></i></div>
+          <p class="ach-name">Patent — Pump Set Motor Assembly</p>
+          <p class="ach-sub">Havells India Ltd. · Filed 2019</p>
+        </div>
+        <div class="ach-overlay">
+          <p class="ach-overlay-title">Patent Application No. 201911005525</p>
+          <p class="ach-overlay-text">"Pump Set Motor Assembly For Preventing Contaminant Ingress." Filed 12/02/2019 as part of Pumps R&D at Havells CRI. Published 14/08/2020.</p>
+        </div>
+      </div>
+
+      <!-- JENESYS -->
+      <div class="ach-card">
+        <img class="ach-card-img" src="portfolio_material/Achievements/jenesysgroup.PNG" alt="JENESYS">
+        <div class="ach-front">
+          <div class="ach-icon"><i class="fas fa-globe-asia"></i></div>
+          <p class="ach-name">JENESYS Student Exchange</p>
+          <p class="ach-sub">Japan · 2011</p>
+        </div>
+        <div class="ach-overlay">
+          <p class="ach-overlay-title">JENESYS Program — India 2nd Delegation</p>
+          <p class="ach-overlay-text">Selected for the Japan-East Asia Network of Exchange for Students and Youths (JICE). Visited Japan for 10 days (Nov–Dec 2011), including Okinawa prefecture. A life-changing cultural experience.</p>
+        </div>
+      </div>
+
+      <!-- FISITA -->
+      <div class="ach-card">
+        <div class="ach-front">
+          <div class="ach-icon"><i class="fas fa-award"></i></div>
+          <p class="ach-name">FISITA Travel Bursary Award</p>
+          <p class="ach-sub">€1,500 · Cranfield, UK</p>
+        </div>
+        <div class="ach-overlay">
+          <p class="ach-overlay-title">FISITA Travel Bursary — €1,500</p>
+          <p class="ach-overlay-text">Awarded by FISITA for research internship at the Advanced Vehicle Engineering Centre (AVEC), Cranfield University, UK.</p>
+        </div>
+      </div>
+
+      <!-- Institute Color -->
+      <div class="ach-card">
+        <div class="ach-front">
+          <div class="ach-icon"><i class="fas fa-medal"></i></div>
+          <p class="ach-name">Institute Color for Sports</p>
+          <p class="ach-sub">Punjab Engineering College</p>
+        </div>
+        <div class="ach-overlay">
+          <p class="ach-overlay-title">Institute Color — Annual Honours Ceremony</p>
+          <p class="ach-overlay-text">Awarded PEC's most prestigious sports recognition at the Annual Honours Ceremony for consistent and outstanding contributions to college sports across multiple years.</p>
+        </div>
+      </div>
+
+      <!-- Best Athlete -->
+      <div class="ach-card">
+        <img class="ach-card-img" src="portfolio_material/Sports/bestathlete.JPG" alt="Best Athlete">
+        <div class="ach-front">
+          <div class="ach-icon"><i class="fas fa-running"></i></div>
+          <p class="ach-name">Best Athlete — ITUSA</p>
+          <p class="ach-sub">800m Gold · 400m Gold · 1500m Silver</p>
+        </div>
+        <div class="ach-overlay">
+          <p class="ach-overlay-title">Best Athlete — Inter-Technology Universities</p>
+          <p class="ach-overlay-text">Won Best Athlete at the inaugural ITUSA Athletics Championship. Golds in 800m and 400m; Silver in 1500m. Received newspaper citation for the achievement.</p>
+        </div>
+      </div>
+
+      <!-- PMSS -->
+      <div class="ach-card">
+        <div class="ach-front">
+          <div class="ach-icon"><i class="fas fa-scroll"></i></div>
+          <p class="ach-name">Prime Minister's Scholarship</p>
+          <p class="ach-sub">PMSS Awardee</p>
+        </div>
+        <div class="ach-overlay">
+          <p class="ach-overlay-title">Prime Minister's Scholarship Scheme (PMSS)</p>
+          <p class="ach-overlay-text">Qualified for PMSS, which encourages higher technical and professional education for dependent wards of Ex-Servicemen. Received congratulatory letter from the Prime Minister of India.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ Sports ════════════════════════════════════════════════ -->
+<section class="page-section bg-primary" id="sports">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">// athletics</span>
+      <h2 class="section-title">Sports</h2>
+    </div>
+
+    <div class="sports-tabs">
+      <button class="sports-tab active" onclick="switchTab('athletics')">Track &amp; Field</button>
+      <button class="sports-tab" onclick="switchTab('basketball')">Basketball</button>
+    </div>
+
+    <!-- Athletics -->
+    <div class="sports-panel active" id="tab-athletics">
+      <div class="sports-media-row">
+        <div class="sports-img-card">
+          <img src="portfolio_material/Sports/athleticsfirstyear.jpg" alt="First year athletics">
+          <div class="sports-img-caption">1st Year — Best Athlete</div>
+        </div>
+        <div class="sports-img-card">
+          <img src="portfolio_material/Sports/athleticssecondyear.png" alt="Second year athletics">
+          <div class="sports-img-caption">2nd Year — ITUSA Meet</div>
+        </div>
+        <div class="sports-img-card">
+          <img src="portfolio_material/Sports/athleticsfinal.JPG" alt="Final year athletics">
+          <div class="sports-img-caption">Final Year — Captain</div>
+        </div>
+        <div class="sports-img-card">
+          <img src="portfolio_material/Sports/bestathlete.JPG" alt="Best Athlete award">
+          <div class="sports-img-caption">Best Athlete — Newspaper</div>
+        </div>
+      </div>
+
+      <ul class="event-list">
+        <li class="event-item">
+          <div class="event-dot"></div>
+          <div>
+            <p class="event-name">68th PEC Annual Athletic Meet</p>
+            <p class="event-result">Best Athlete · 800m Gold · 400m Gold · 400m Hurdles Gold · 1500m Silver</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot"></div>
+          <div>
+            <p class="event-name">Inter-Technology Universities Athletic Meet 2014–15</p>
+            <p class="event-result">Best Athlete · 800m Gold · 400m Gold · 1500m Silver</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot"></div>
+          <div>
+            <p class="event-name">Urja SportsFest 2015 — Thapar University</p>
+            <p class="event-result">800m Silver</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot"></div>
+          <div>
+            <p class="event-name">8th PEC Mini Marathon</p>
+            <p class="event-result">10th of 150+ participants</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot"></div>
+          <div>
+            <p class="event-name">69th PEC Annual Athletic Meet</p>
+            <p class="event-result">400m Hurdles Silver · 800m Bronze</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot"></div>
+          <div>
+            <p class="event-name">Inter-Technology Universities Athletic Meet 2015–16</p>
+            <p class="event-result">800m Silver · 1500m Bronze · 4×400m Relay Bronze</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot"></div>
+          <div>
+            <p class="event-name">9th PEC Mini Marathon</p>
+            <p class="event-result">7th of 200+ participants · Certificate of Appreciation</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot"></div>
+          <div>
+            <p class="event-name">71st PEC Annual Athletic Meet — Captain</p>
+            <p class="event-result">800m Gold · 4×400m Relay Gold (Record: 48.6s) · 400m Bronze · 1500m Bronze</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot"></div>
+          <div>
+            <p class="event-name">Inter-Technology Universities Athletic Meet 2017–18</p>
+            <p class="event-result">800m Silver · 4×400m Relay Silver · 400m Bronze</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Basketball -->
+    <div class="sports-panel" id="tab-basketball">
+      <div class="sports-media-row">
+        <div class="sports-img-card">
+          <img src="portfolio_material/Sports/firstyearbb.jpg" alt="First year basketball">
+          <div class="sports-img-caption">1st Year — ITUSA 3rd</div>
+        </div>
+        <div class="sports-img-card">
+          <img src="portfolio_material/Sports/bb.png" alt="Basketball">
+          <div class="sports-img-caption">Final Year — Captain</div>
+        </div>
+        <div class="sports-img-card" style="cursor:pointer;" onclick="this.querySelector('video').play()">
+          <video src="portfolio_material/Sports/layup.mp4" loop muted playsinline style="pointer-events:none;"></video>
+          <div class="sports-img-caption">Layup — hover/tap to play</div>
+        </div>
+        <div class="sports-img-card">
+          <img src="portfolio_material/Sports/sports.png" alt="Sports">
+          <div class="sports-img-caption">College Sports</div>
+        </div>
+      </div>
+
+      <ul class="event-list">
+        <li class="event-item">
+          <div class="event-dot" style="background:var(--blue)"></div>
+          <div>
+            <p class="event-name">Inter-Technology Universities Basketball 2014–15</p>
+            <p class="event-result" style="color:var(--blue)">3rd Position</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot" style="background:var(--blue)"></div>
+          <div>
+            <p class="event-name">Inter-Technology Universities Basketball 2017–18 — Captain</p>
+            <p class="event-result" style="color:var(--blue)">3rd Position</p>
+          </div>
+        </li>
+        <li class="event-item">
+          <div class="event-dot" style="background:var(--blue)"></div>
+          <div>
+            <p class="event-name">Akhada SportsFest 2018 — UILS, Punjab University</p>
+            <p class="event-result" style="color:var(--blue)">2nd Position</p>
+          </div>
+        </li>
+      </ul>
+      <p style="margin-top:1.5rem; font-family:'JetBrains Mono',monospace; font-size:.8rem; color:var(--blue); font-style:italic;">
+        "Basketball is a lifelong game. You continue to learn from the game day in and day out, and all along the way, you get better." — Scottie Pippen
       </p>
-      <p class="masthead-subheading" style="margin-top:0.25rem !important;">
-        Building intelligent systems that understand and interact with the physical world.
-      </p>
-
-      <div class="hero-cta">
-        <a class="btn-hero-primary js-scroll-trigger" href="#WorkExperience">View Experience</a>
-        <a class="btn-hero-outline js-scroll-trigger" href="#contact">Get in Touch</a>
-      </div>
-
     </div>
-  </header>
 
-  <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio">
-    <div class="container">
+  </div>
+</section>
 
-      <div class="section-title-wrap">
-        <span class="section-label">// highlights</span>
-        <h2 class="page-section-heading">Portfolio</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/certifications.png" alt="Certifications">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/projects.png" alt="Projects">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/awards.png" alt="Achievements">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/volunteer.png" alt="Volunteering">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/sports.png" alt="Sports">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/courses.png" alt="Courses">
-          </div>
-        </div>
-      </div>
-
+<!-- ══ Contact ════════════════════════════════════════════════ -->
+<section class="page-section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">// connect</span>
+      <h2 class="section-title">Contact Me</h2>
     </div>
-  </section>
 
-  <!-- Work Experience Section -->
-  <section class="page-section bg-primary" id="WorkExperience">
-    <div class="container">
-
-      <div class="section-title-wrap">
-        <span class="section-label">// career</span>
-        <h2 class="page-section-heading">Work Experience</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#workexpModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/havells.png" alt="Havells India">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#workexpModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Cranfield.png" alt="Cranfield University">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#workexpModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/PEC.png" alt="PEC Responsibilities">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Resume Section -->
-  <section class="page-section" id="Resume">
-    <div class="container">
-
-      <div class="section-title-wrap">
-        <span class="section-label">// background</span>
-        <h2 class="page-section-heading">Resume</h2>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-5 mb-4">
-          <p class="lead">Mechanical engineer turned data scientist, currently focused on the intersection of machine learning and physical systems — from sensor fusion and robot perception to embodied intelligence and physical AI.</p>
-        </div>
-        <div class="col-lg-5 mb-4">
-          <p class="lead">If you'd like the latest version of my CV or want to know more about my journey, download it below or reach out directly.</p>
-        </div>
-      </div>
-
-      <div class="text-center mt-4">
-        <a class="btn-resume" href="img/portfolio/Ujjwal__CV.pdf" target="_blank" rel="noopener">
-          <i class="fas fa-download"></i> Download Resume
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Skills & Interests Section -->
-  <section class="page-section bg-primary" id="SkillsInterests">
-    <div class="container">
-
-      <div class="section-title-wrap">
-        <span class="section-label">// toolkit</span>
-        <h2 class="page-section-heading">Skills &amp; Interests</h2>
-      </div>
-
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <h5>Languages</h5>
-          <div class="tag-row">
-            <span class="tag">Python</span>
-            <span class="tag">C++</span>
-            <span class="tag">C</span>
-            <span class="tag">SQL</span>
-            <span class="tag">MATLAB</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h5>ML / AI</h5>
-          <div class="tag-row">
-            <span class="tag">PyTorch</span>
-            <span class="tag">scikit-learn</span>
-            <span class="tag">TensorFlow</span>
-            <span class="tag">NumPy</span>
-            <span class="tag">pandas</span>
-            <span class="tag">Bokeh</span>
-            <span class="tag">Deep Learning</span>
-            <span class="tag">Computer Vision</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h5>Embodied &amp; Physical AI</h5>
-          <div class="tag-row">
-            <span class="tag tag-purple">Robotics</span>
-            <span class="tag tag-purple">Sensor Fusion</span>
-            <span class="tag tag-purple">Control Systems</span>
-            <span class="tag tag-purple">Hardware-in-Loop</span>
-            <span class="tag tag-purple">Arduino</span>
-            <span class="tag tag-purple">EV Systems</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h5>Engineering Tools</h5>
-          <div class="tag-row">
-            <span class="tag">CATIA V5</span>
-            <span class="tag">CREO</span>
-            <span class="tag">Keyshot</span>
-            <span class="tag">CAD/CAM</span>
-            <span class="tag">FEA</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h5>Creative</h5>
-          <div class="tag-row">
-            <span class="tag">Adobe Premiere</span>
-            <span class="tag">After Effects</span>
-            <span class="tag">Illustrator</span>
-            <span class="tag">Photoshop</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h5>Interests</h5>
-          <div class="tag-row">
-            <span class="tag tag-purple">Physical AI</span>
-            <span class="tag tag-purple">Embodied Agents</span>
-            <span class="tag tag-purple">Athletics</span>
-            <span class="tag tag-purple">Basketball</span>
-            <span class="tag tag-purple">Video Editing</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Work Samples -->
-      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1rem;">
-        <a class="btn-hero-outline" data-toggle="modal" data-target="#saiModal1" style="cursor:pointer;">
-          <i class="fas fa-play mr-2"></i> Video Editing Samples
-        </a>
-        <a class="btn-hero-outline" data-toggle="modal" data-target="#saiModal2" style="cursor:pointer;">
-          <i class="fas fa-image mr-2"></i> Photo Editing Samples
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
-
-      <div class="section-title-wrap">
-        <span class="section-label">// reach out</span>
-        <h2 class="page-section-heading">Contact Me</h2>
-      </div>
-
-      <div class="contact-wrapper">
-
-        <!-- Left: info + direct links -->
-        <div class="contact-info">
-          <h4>Let's connect</h4>
-          <p>I'm always open to discussing new research directions, collaborations in embodied AI and physical systems, or data science opportunities. Drop me a message.</p>
-          <div class="contact-links">
-            <a class="contact-link" href="mailto:ujjwaltech.05@gmail.com">
-              <i class="fas fa-envelope"></i> ujjwaltech.05@gmail.com
-            </a>
-            <a class="contact-link" href="https://www.linkedin.com/in/ujjwal-kalkhande" target="_blank" rel="noopener">
-              <i class="fab fa-linkedin-in"></i> linkedin.com/in/ujjwal-kalkhande
-            </a>
-            <a class="contact-link" href="https://github.com/ujjwal5" target="_blank" rel="noopener">
-              <i class="fab fa-github"></i> github.com/ujjwal5
-            </a>
-          </div>
-        </div>
-
-        <!-- Right: Formspree form -->
-        <!--
-          TO ACTIVATE THIS FORM:
-          1. Sign up free at https://formspree.io using ujjwaltech.05@gmail.com
-          2. Create a new form → copy your form ID (looks like: xpwzgkjo)
-          3. Replace YOUR_FORM_ID below with that ID
-        -->
-        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="form-group mb-3">
-            <label for="name">Name</label>
-            <input class="form-control" id="name" name="name" type="text" placeholder="Your name" required>
-          </div>
-          <div class="form-group mb-3">
-            <label for="email">Email</label>
-            <input class="form-control" id="email" name="email" type="email" placeholder="your@email.com" required>
-          </div>
-          <div class="form-group mb-3">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
-          </div>
-          <!-- Formspree honeypot spam filter -->
-          <input type="text" name="_gotcha" style="display:none">
-          <input type="hidden" name="_subject" value="New message from portfolio">
-          <button type="submit" class="btn-send">Send Message</button>
-        </form>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4>Location</h4>
-          <p class="lead mb-0">India</p>
-        </div>
-
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4>Around the Web</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/ujjwal5" target="_blank" rel="noopener" aria-label="GitHub">
-            <i class="fab fa-fw fa-github"></i>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h4>Let's build something.</h4>
+        <p>Open to collaborations in embodied AI, physical AI systems, ML research, and data science. Drop a message or connect directly.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:ujjwaltech.05@gmail.com">
+            <i class="fas fa-envelope"></i> ujjwaltech.05@gmail.com
           </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/ujjwal-kalkhande" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <i class="fab fa-fw fa-linkedin-in"></i>
+          <a class="contact-link" href="https://www.linkedin.com/in/ujjwal-kalkhande" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin-in"></i> linkedin.com/in/ujjwal-kalkhande
           </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="mailto:ujjwaltech.05@gmail.com" aria-label="Email">
-            <i class="fas fa-fw fa-envelope"></i>
+          <a class="contact-link" href="https://github.com/ujjwal5" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> github.com/ujjwal5
           </a>
         </div>
-
-        <div class="col-lg-4">
-          <h4>About This Site</h4>
-          <p class="lead mb-0">Designed &amp; built by Ujjwal.</p>
-        </div>
-
       </div>
-    </div>
-  </footer>
 
-  <!-- Copyright -->
-  <section class="copyright py-4 text-center">
-    <div class="container">
-      <small>&copy; Ujjwal Kalkhande</small>
-    </div>
-  </section>
-
-  <!-- Scroll to Top -->
-  <div class="scroll-to-top d-lg-none position-fixed">
-    <a class="js-scroll-trigger d-block text-center rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════
-       PORTFOLIO MODALS (content unchanged)
-       ═══════════════════════════════════════════════════════ -->
-
-  <!-- Portfolio Modal 1: Certifications -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Certifications</h2>
-                <h3 class="portfolio-modal-subtitle">Machine Learning — Coursera (Stanford / Andrew Ng)</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/machine_learning.png" alt="">
-                <p class="mb-5">Completed the Stanford ML course covering Supervised Learning (Linear Regression, Neural Networks, SVMs), Unsupervised Learning (K-means, PCA, Anomaly Detection), Recommender Systems, and large-scale ML. Strong emphasis on Bias/Variance, Regularization, and Error Analysis.</p>
-                <h3 class="portfolio-modal-subtitle">Data Scientist with Python Track — DataCamp</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/Datacamp_data_scientist.png" alt="">
-                <p class="mb-5">26-course career track covering Python, pandas, scikit-learn, SQL, Bokeh, statistical thinking, supervised/unsupervised learning, deep learning, and network analysis.</p>
-                <h3 class="portfolio-modal-subtitle">Business Analytics Specialization — Wharton / UPenn</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/business_analytics_specialization.png" alt="">
-                <p class="mb-5">4-course specialization + capstone covering Customer, Operations, People, and Accounting Analytics. Capstone focused on data-driven strategy for the ad-blocking problem.</p>
-                <h3 class="portfolio-modal-subtitle">Probability &amp; Statistics — Udemy</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/probability_and_statistics.png" alt="">
-                <p class="mb-5">Comprehensive course covering data visualization, descriptive statistics, distributions, probability theory, Bayes' theorem, hypothesis testing, confidence intervals, and regression.</p>
-                <h3 class="portfolio-modal-subtitle">MATLAB — Texplore Laboratories</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/MATLAB.png" alt="">
-                <p class="mb-5">Hands-on MATLAB training at Texplore Laboratories, Chandigarh, building computational and simulation skills foundational to engineering research.</p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
+      <!--
+        TO ACTIVATE FORM:
+        1. Sign up free at https://formspree.io with ujjwaltech.05@gmail.com
+        2. Create a new form → copy your form ID
+        3. Replace YOUR_FORM_ID in the action attribute below
+      -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input class="form-control" id="name" name="name" type="text" placeholder="Your name" required>
         </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input class="form-control" id="email" name="email" type="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_subject" value="Portfolio contact">
+        <button type="submit" class="btn-send">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Footer ════════════════════════════════════════════════ -->
+<footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h4>Location</h4>
+        <p class="lead mb-0">San Jose, California</p>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h4>Around the Web</h4>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/ujjwal5" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-fw fa-github"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/ujjwal-kalkhande" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-fw fa-linkedin-in"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-1" href="mailto:ujjwaltech.05@gmail.com" aria-label="Email">
+          <i class="fas fa-fw fa-envelope"></i>
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <h4>Built By</h4>
+        <p class="lead mb-0">Ujjwal Kalkhande</p>
       </div>
     </div>
   </div>
-
-  <!-- Portfolio Modal 2: Projects -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Projects</h2>
-                <h3 class="portfolio-modal-subtitle">All-Terrain Robot — Minor Project</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/minor_project.png" alt="">
-                <p class="mb-5">Fabricated a suspension-induced all-terrain robot with an Arduino Mega 800. DC motors drive the wheels; Johnson and Servo motors actuate a pick-and-place gripper. Powered by a LiPo 12V 2200mAh battery. Full CAD assembly in CATIA V5.</p>
-                <h3 class="portfolio-modal-subtitle">Portable Mechanical Charger — Major Project</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/major_project.png" alt="">
-                <p class="mb-5">Designed and fabricated a human-powered mechanical charger using a 1:27 compound gear train (3 pairs of 69T/23T spur gears) driving a dynamo. Generated 12V output via a diode bridge rectifier for device charging.</p>
-                <h3 class="portfolio-modal-subtitle">FSAE SUPRA SAEINDIA</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/fsae.png" alt="">
-                <p class="mb-5">Formula Student team member. Developed and validated a tubular space-frame chassis through structural and harmonic FEA. Designed gear shifter and bell cranks. Represented the team in the Business Presentation. Ranked 29th nationally among 145 teams at Buddh International Circuit.</p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+</footer>
+<section class="copyright py-4 text-center">
+  <div class="container">
+    <small>&copy; Ujjwal Kalkhande</small>
   </div>
+</section>
 
-  <!-- Portfolio Modal 3: Achievements -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Achievements</h2>
-                <h3 class="portfolio-modal-subtitle">JENESYS Student Exchange Program</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/jenesys.png" alt="">
-                <p class="mb-5">Selected for India's 2nd delegation to Japan (Nov–Dec 2011) under the JENESYS program organized by JICE, promoting mutual understanding across Asia. Visited Okinawa prefecture.</p>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/jenesysgroup.png" alt="">
-                <h3 class="portfolio-modal-subtitle">FISITA Travel Bursary Award</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/fisita.png" alt="">
-                <p class="mb-5">Awarded €1,500 by FISITA for my internship at the Advanced Vehicle Engineering Centre (AVEC), Cranfield University, UK.</p>
-                <h3 class="portfolio-modal-subtitle">Institute Color for Sports</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/color.png" alt="">
-                <p class="mb-5">Awarded the prestigious Institute Color at PEC's Annual Honours Ceremony for consistent contributions to college sports.</p>
-                <h3 class="portfolio-modal-subtitle">Best Athlete — ITUSA Athletic Meet</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/bestathlete.jpg" alt="">
-                <p class="mb-5">Best Athlete at the inaugural Inter-Technology Universities Athletics Championship (ITUSA). Golds in 800m and 400m; Silver in 1500m.</p>
-                <h3 class="portfolio-modal-subtitle">Prime Minister's Scholarship Scheme</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/pmss.png" alt="">
-                <p class="mb-5">Qualified for PMSS encouraging higher technical education for dependents of Ex-Servicemen. Received a congratulatory letter from the honorable Prime Minister.</p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="scroll-to-top d-lg-none position-fixed">
+  <a class="js-scroll-trigger d-block text-center rounded" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
 
-  <!-- Portfolio Modal 4: Volunteering -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Volunteering</h2>
-                <h3 class="portfolio-modal-subtitle">Rotaract Club Chandigarh Himalayan</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/rotaract.png" alt="">
-                <p class="mb-5">Member of the youth wing of Rotary International (District 3080). Helped organise: Freeze Mob for sanitation awareness, fund-raising for Kashmir Flood Victims, Kids Olympics for orphanage children, Pirates of City treasure hunt, and a Salsa Slam workshop.</p>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/rotaracticon.png" alt="">
-                <p class="mb-5">My experience instilled a belief that education is the key to societal upliftment. I aim to help underprivileged children access education and basic facilities.</p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- ══ Scripts ════════════════════════════════════════════════ -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/freelancer.min.js"></script>
+<script src="js/theme.js"></script>
+<script>
+  // Accordion: Work Experience
+  function toggleWork(id) {
+    var card = document.getElementById(id);
+    card.classList.toggle('open');
+  }
 
-  <!-- Portfolio Modal 5: Sports -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Sports</h2>
-                <h3 class="portfolio-modal-subtitle">Athletics</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/athleticsfirstyear.jpg" alt="">
-                <p class="mb-5">68th PEC Annual Athletic Meet: Best Athlete, 800m Gold, 400m Gold, 400m Hurdles Gold, 1500m Silver</p>
-                <p class="mb-5">ITUSA 2014–15: Best Athlete, 800m Gold, 400m Gold, 1500m Silver</p>
-                <p class="mb-5">Urja SportsFest 2015 (Thapar): 800m Silver · 10th in 8th PEC Mini Marathon (150+ runners)</p>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/athleticssecondyear.png" alt="">
-                <p class="mb-5">69th PEC Annual Athletic Meet: 400m Hurdles Silver, 800m Bronze</p>
-                <p class="mb-5">ITUSA 2015–16: 800m Silver, 1500m Bronze, 4×400m Relay Bronze · 7th in 9th PEC Mini Marathon</p>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/athleticsfinal.jpg" alt="">
-                <p class="mb-5">Captain, Athletics Team · 71st PEC Annual Athletic Meet: 800m Gold, 4×400m Relay Gold (Record: 48.6s), 400m Bronze, 1500m Bronze</p>
-                <p class="mb-5">ITUSA 2017–18: 800m Silver, 4×400m Relay Silver, 400m Bronze</p>
-                <h3 class="portfolio-modal-subtitle">Basketball</h3>
-                <video class="mb-5" width="274" height="484" controls loop autoplay>
-                  <source src="img/portfolio/layup.mp4" type="video/mp4">
-                </video>
-                <p class="mb-5">"Basketball is a lifelong game. You continue to learn from the game day in and day out." — Scottie Pippen</p>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/firstyearbb.jpg" alt="">
-                <p class="mb-5">ITUSA Basketball 2014–15: 3rd Position</p>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/bb.png" alt="">
-                <p class="mb-5">Captain, Basketball Team · ITUSA 2017–18: 3rd Position · Akhada SportsFest 2018 (UILS): 2nd Position</p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  // Accordion: Education
+  function toggleEdu(id) {
+    var card = document.getElementById(id);
+    card.classList.toggle('open');
+  }
 
-  <!-- Portfolio Modal 6: Courses -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Courses</h2>
-                <h3 class="portfolio-modal-subtitle">First Year</h3>
-                <p class="mb-5">Computer Programming Basic, Environmental Sciences, Ethics &amp; Self Awareness, Mathematics-1, Introduction to Mechanical Engineering, Mechanics, Applied Chemistry, Fluid Mechanics, Communication Skills, PDEs &amp; Special Functions, Elements of Manufacturing, Engineering &amp; Machine Drawing</p>
-                <h3 class="portfolio-modal-subtitle">Second Year</h3>
-                <p class="mb-5">Material Science, Economics, Elements of Thermodynamics, Kinematics of Machines, Manufacturing Processes, Strength of Materials, Technical Communication, Electrical Sciences, Dynamics of Machines, Mechanics of Materials, Applied Thermodynamics, Refrigeration &amp; Air Conditioning</p>
-                <h3 class="portfolio-modal-subtitle">Third Year</h3>
-                <p class="mb-5">Production Engineering, Heat Transfer, Design of Mechanical Systems, Mechanical Vibration, CADD &amp; M, Minor Project, Industrial Internship (Coordinator I &amp; II, Faculty I &amp; II, Final Report)</p>
-                <h3 class="portfolio-modal-subtitle">Final Year</h3>
-                <p class="mb-5">Object Oriented Programming, Energy Conversion, Industrial Automation &amp; Robotics, Capstone Project, Business Environment &amp; Business Laws, Automobile Engineering, Major Project, Athletics</p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════
-       WORK EXPERIENCE MODALS
-       ═══════════════════════════════════════════════════════ -->
-
-  <!-- WorkExp Modal 1: Havells -->
-  <div class="portfolio-modal modal fade" id="workexpModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Havells India Ltd.</h2>
-                <p class="mb-5">One of India's largest FMEG companies. Worked in R&D of pumps at the Center for Research and Innovation (CRI), engaging in all phases of design — drafting, dimensioning, tolerancing, prototyping, and documentation.</p>
-                <h3 class="portfolio-modal-subtitle">Water-Ingress Protection for MonoBlock Pumps</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/havellspump.png" alt="">
-                <p class="mb-5">Led development of the cheapest implementable solution to counter water-ingress across all monoblock pump designs. New designs incorporated a special seal type, deployed across 14 pump SKUs. A patent application was filed and is pending processing.</p>
-                <h3 class="portfolio-modal-subtitle">CAD Layout of Pumps R&amp;D Lab</h3>
-                <p class="mb-5">Created full CAD models of all lab equipment — testing tanks, tool tables, fixtures, and pipeline layout — to finalize the Purchase Order Request for the new pumps testing and validation facility at CRI.</p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WorkExp Modal 2: Cranfield -->
-  <div class="portfolio-modal modal fade" id="workexpModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Cranfield University</h2>
-                <h3 class="portfolio-modal-subtitle">Advanced Vehicle Engineering Centre (AVEC)</h3>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/hil.gif" alt="">
-                <p class="mb-5">Visiting researcher at AVEC, School of Aerospace, Transport and Manufacture (SATM), Cranfield University (Feb–Jul 2017). Worked with Mr. Manlio Valerio Morganti on a Hardware-in-Loop (HIL) test rig for Electric Vehicle Thermal Management Systems, funded by Arrival (formerly Charge Automotive Ltd.).</p>
-                <p class="mb-5">After literature review and gap analysis, compared heat exchangers, thermal fluids, and DAQ systems. Developed full CAD models of the test rig and simulation chamber in CATIA V5, rendered in Keyshot for stakeholder presentations. The virtual design was instrumental in finalizing the Purchase Order Request.</p>
-                <p class="mb-5">Learned research methodology, cross-disciplinary collaboration, time-bound delivery, and compliance with EHS rules — experiences that fundamentally shaped my approach to rigorous technical work.</p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WorkExp Modal 3: PEC Responsibilities -->
-  <div class="portfolio-modal modal fade" id="workexpModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Responsibilities</h2>
-                <h3 class="portfolio-modal-subtitle">Athletics Captain</h3>
-                <p class="mb-5">Organised athletics camp for college athletics team practice. Member of the 71st PEC Annual Athletic Meet Organising Committee.</p>
-                <h3 class="portfolio-modal-subtitle">Basketball Captain</h3>
-                <p class="mb-5">Organised intra-college basketball events and team practice camps throughout the year.</p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════
-       SKILLS & INTERESTS MODALS
-       ═══════════════════════════════════════════════════════ -->
-
-  <!-- Skills Modal 1: Video -->
-  <div class="portfolio-modal modal fade" id="saiModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Athletics Video</h2>
-                <video class="img-fluid rounded mb-5" width="854" height="480" controls autoplay>
-                  <source src="img/portfolio/video_ujjwal.mp4" type="video/mp4">
-                </video>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Skills Modal 2: Photo -->
-  <div class="portfolio-modal modal fade" id="saiModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title">Marketing Brochure</h2>
-                <img class="img-fluid rounded mb-5" src="img/portfolio/saebrochureone.png" alt="">
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i> Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/freelancer.min.js"></script>
-  <script src="js/theme.js"></script>
-
+  // Sports tabs
+  function switchTab(name) {
+    document.querySelectorAll('.sports-tab').forEach(function(t) { t.classList.remove('active'); });
+    document.querySelectorAll('.sports-panel').forEach(function(p) { p.classList.remove('active'); });
+    document.getElementById('tab-' + name).classList.add('active');
+    event.currentTarget.classList.add('active');
+  }
+</script>
 </body>
 </html>
