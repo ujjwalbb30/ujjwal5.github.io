@@ -73,12 +73,16 @@ img { max-width: 100%; height: auto; }
 }
 #mainNav.navbar-shrink { background: var(--nav-bg) !important; }
 #mainNav .navbar-brand {
-  font-family: 'Space Grotesk', sans-serif !important;
+  font-family: 'JetBrains Mono', monospace !important;
   font-weight: 700;
-  font-size: 1.05rem;
-  letter-spacing: .16em;
+  font-size: .85rem;
+  letter-spacing: .12em;
   color: var(--gold) !important;
   text-transform: uppercase;
+  /* fixed width prevents navbar reflow as words change length */
+  display: inline-block;
+  min-width: 200px;
+  white-space: nowrap;
 }
 #mainNav .nav-link {
   font-family: 'JetBrains Mono', monospace !important;
