@@ -76,7 +76,7 @@
     }, FRAME_MS);
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
+  function init() {
     var brand = document.querySelector('#mainNav .navbar-brand');
     if (!brand) return;
 
@@ -89,7 +89,13 @@
       });
     }
 
-    // Start after a short delay so the page settles first
-    setTimeout(cycle, 3000);
-  });
+    setTimeout(cycle, 2000);
+  }
+
+  // Script is at bottom of body — DOM is already ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
