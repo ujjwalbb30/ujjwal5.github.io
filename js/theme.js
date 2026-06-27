@@ -100,29 +100,34 @@
 })();
 
 /* ── Hero split animation on scroll ───────────────────────
-   The masthead is 200vh tall with a sticky inner panel.
-   As the user scrolls through the first 100vh of the hero,
-   the layout transitions from centered → split two-column.
+   Sets CSS custom property --hp (0→1) on <html> each frame,
+   driving flex-basis, opacity, and scaleY directly in CSS so
+   the transition is perfectly smooth at any scroll speed.
    ─────────────────────────────────────────────────────────── */
 (function () {
   var heroInner = document.querySelector('.hero-inner');
   var masthead  = document.querySelector('.masthead');
   if (!heroInner || !masthead) return;
 
-  function onScroll() {
-    var scrollY      = window.scrollY;
-    var viewportH    = window.innerHeight;
-    // scroll zone = the extra 100vh we added beyond the sticky panel
-    var scrollZone   = masthead.offsetHeight - viewportH;
-    var progress     = scrollZone > 0 ? Math.min(1, scrollY / scrollZone) : 0;
+  var rafPending = false;
 
-    if (progress > 0.15) {
-      heroInner.classList.add('hero-split');
-    } else {
-      heroInner.classList.remove('hero-split');
-    }
+  function smoothStep(x) {
+    x = x < 0 ? 0 : x > 1 ? 1 : x;
+    return x * x * (3 - 2 * x);
   }
 
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  function update() {
+    rafPending = false;
+    var scrollZone = masthead.offsetHeight - window.innerHeight;
+    var raw        = scrollZone > 0 ? window.scrollY / scrollZone : 0;
+    var hp         = smoothStep(raw);
+
+    document.documentElement.style.setProperty('--hp', hp.toFixed(4));
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!rafPending) { rafPending = true; requestAnimationFrame(update); }
+  }, { passive: true });
+
+  update(); // set initial state
 })();

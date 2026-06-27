@@ -236,106 +236,95 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   z-index: 1;
-  overflow: hidden;
+  /* no overflow:hidden — that was clipping the right panel */
 }
 
-/* Two-panel flex row */
+/* Two-panel flex row — widths driven by --hp (0→1) set by JS */
 .hero-inner {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1360px;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 2.5rem;
   display: flex;
   align-items: center;
-  gap: 0;
 }
 
-/* ── Left panel ── */
+/* ── Left panel ──────────────────────────────────────────── */
 .hero-left {
+  /* shrinks from 100% → 46% as --hp goes 0→1 */
+  flex: 0 0 calc(100% - var(--hp, 0) * 54%);
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  flex: 0 0 100%;
-  transition: flex-basis .6s ease, align-items .6s ease, text-align .6s ease;
 }
+/* no alignment toggle — content stays centered within the narrowing column,
+   which naturally drifts left as the panel shrinks. no sudden jump. */
 
-/* ── Right panel ── */
+/* ── Right panel ─────────────────────────────────────────── */
 .hero-right {
-  flex: 0 0 0%;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateX(50px);
-  transition: flex-basis .6s ease, opacity .6s ease, transform .6s ease;
+  /* expands from 0% → 54% as --hp goes 0→1 */
+  flex: 0 0 calc(var(--hp, 0) * 54%);
+  min-width: 0;
+  overflow: hidden;                        /* clips text while panel is narrow */
+  padding-left: 2.5rem;
+  box-sizing: border-box;
+  /* opacity + slide driven by --hp — fully smooth, no CSS transition */
+  opacity: var(--hp, 0);
+  transform: translateX(calc((1 - var(--hp, 0)) * 36px));
 }
 .hero-right p {
   color: var(--text2);
-  font-size: .92rem;
-  line-height: 1.8;
-  margin-bottom: 1.2rem;
+  font-size: .9rem;
+  line-height: 1.85;
+  margin-bottom: 1.1rem;
+  white-space: normal;
+  word-break: break-word;
 }
 .hero-right p:last-child { margin-bottom: 0; }
 
-/* ── Split state (triggered by scroll) ── */
-.hero-inner.hero-split .hero-left {
-  flex-basis: 42%;
-  align-items: flex-start;
-  text-align: left;
-}
-.hero-inner.hero-split .hero-right {
-  flex-basis: 58%;
-  opacity: 1;
-  transform: translateX(0);
-  padding-left: 4rem;
-}
-
-/* Short bio: fades out in split state */
+/* ── Short bio (fades + collapses as --hp grows) ── */
 .hero-short-bio {
-  max-width: 800px;
-  margin-bottom: 1.8rem;
-  transition: opacity .4s ease, max-height .5s ease;
+  max-width: 860px;
   overflow: hidden;
+  /* max-height collapses layout space; opacity fades it out faster */
+  max-height: calc(800px * max(0, 1 - var(--hp, 0)));
+  opacity: calc(max(0, 1 - var(--hp, 0) * 2));
+  /* margin shrinks to zero as bio collapses */
+  margin-bottom: calc(1.6rem * max(0, 1 - var(--hp, 0)));
 }
 .hero-short-bio p {
   color: var(--text2);
-  font-size: .93rem;
+  font-size: .92rem;
   line-height: 1.75;
-  margin-bottom: .5rem;
-  white-space: nowrap; /* prevent wrapping on each line */
+  margin-bottom: .45rem;
+  white-space: nowrap;
 }
-.hero-short-bio small { color: var(--muted); font-size: .8rem; }
-.hero-inner.hero-split .hero-short-bio {
-  opacity: 0;
-  max-height: 0;
-  margin-bottom: 0;
-}
+.hero-short-bio small { color: var(--muted); font-size: .78rem; }
 
-/* Avatar */
+/* ── Avatar ── */
 .masthead-avatar {
-  width: 140px !important;
-  height: 140px;
+  width: 135px !important;
+  height: 135px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--gold);
   box-shadow: 0 0 0 5px var(--gold-dim), 0 0 40px var(--gold-glow), 0 0 80px var(--blue-glow);
-  margin-bottom: 1.5rem !important;
-  transition: width var(--t), height var(--t), box-shadow var(--t);
+  margin-bottom: 1.4rem !important;
+  transition: box-shadow var(--t);
 }
 .masthead-avatar:hover { box-shadow: 0 0 0 7px var(--gold-dim), 0 0 60px var(--gold-glow), 0 0 100px var(--blue-glow); }
-.hero-inner.hero-split .masthead-avatar { width: 110px !important; height: 110px; }
 
 .masthead-heading {
-  font-size: 2.8rem !important;
+  font-size: 2.7rem !important;
   font-weight: 700 !important;
   letter-spacing: -.02em !important;
   text-transform: none !important;
   color: var(--text) !important;
   line-height: 1.1;
   margin-bottom: .4rem !important;
-  transition: font-size var(--t);
 }
-.hero-inner.hero-split .masthead-heading { font-size: 2.2rem !important; }
-
 .masthead-subheading {
   font-family: 'Inter', sans-serif !important;
   color: var(--text2) !important;
@@ -343,18 +332,16 @@ img { max-width: 100%; height: auto; }
   line-height: 1.8 !important;
   margin: 0 !important;
 }
-
 .hero-role {
   font-family: 'JetBrains Mono', monospace;
-  font-size: .83rem;
+  font-size: .82rem;
   color: var(--gold);
   letter-spacing: .04em;
-  margin: .7rem 0 1.1rem;
+  margin: .65rem 0 1rem;
 }
 .hero-role::before { content: '> '; opacity: .5; }
 
 .hero-cta { display: flex; gap: .85rem; flex-wrap: wrap; justify-content: center; }
-.hero-inner.hero-split .hero-cta { justify-content: flex-start; }
 .btn-im-gold {
   display: inline-flex; align-items: center; gap: .45rem;
   background: var(--gold); color: #07090f !important;
