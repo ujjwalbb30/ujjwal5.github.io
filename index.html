@@ -54,25 +54,42 @@
 </nav>
 
 <!-- ══ Hero ════════════════════════════════════════════════ -->
-<header class="masthead text-center" id="page-top">
-  <div class="container d-flex align-items-center flex-column">
-    <img class="masthead-avatar" src="portfolio_material/Introduction/portfolio_image.JPG" alt="Ujjwal Kalkhande">
-    <h1 class="masthead-heading">Ujjwal Kalkhande</h1>
-    <p class="hero-role">Data Scientist · ML Engineer · Embodied AI</p>
-    <p class="hero-bio">
-      Multidisciplinary data scientist with 4+ years building scalable ML pipelines, real-time 3D perception systems, and intelligent physical AI products. Currently at Enfuse.IO — previously Atos Z Data, Havells, Cranfield University.
-      <br><small style="color:var(--muted)">San Jose, California</small>
-    </p>
-    <div class="hero-cta">
-      <a class="btn-im-gold js-scroll-trigger" href="#work">
-        <i class="fas fa-briefcase"></i> View Experience
-      </a>
-      <a class="btn-im-outline" href="portfolio_material/Resume/Resume_Ujjwal.pdf" target="_blank" rel="noopener">
-        <i class="fas fa-download"></i> Resume
-      </a>
-      <a class="btn-im-outline js-scroll-trigger" href="#contact">
-        <i class="fas fa-paper-plane"></i> Contact
-      </a>
+<header class="masthead" id="page-top">
+  <div class="hero-sticky">
+    <div class="hero-inner">
+
+      <!-- LEFT: photo + name + role + short bio + buttons -->
+      <div class="hero-left">
+        <img class="masthead-avatar" src="portfolio_material/Introduction/portfolio_image.JPG" alt="Ujjwal Kalkhande">
+        <h1 class="masthead-heading">Ujjwal Kalkhande</h1>
+        <p class="hero-role">Data Scientist · ML Engineer · Embodied AI</p>
+
+        <!-- Short bio — fades out as right panel appears -->
+        <div class="hero-short-bio">
+          <p>Data Scientist with multidisciplinary background spanning data science, AI, ML and mechanical design.</p>
+          <p>4+ years in developing scalable, Python-based machine learning pipelines, real-time 3D perception and localization systems.</p>
+          <p>Currently at Enfuse.io — previously Atos Z Data, Havells, Cranfield University.</p>
+          <small>San Jose, California</small>
+        </div>
+
+        <div class="hero-cta">
+          <a class="btn-im-outline" href="portfolio_material/Resume/Resume_Ujjwal.pdf" target="_blank" rel="noopener">
+            <i class="fas fa-download"></i> Resume
+          </a>
+          <a class="btn-im-outline js-scroll-trigger" href="#contact">
+            <i class="fas fa-paper-plane"></i> Contact
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: full intro paragraphs — slides in on scroll -->
+      <div class="hero-right">
+        <p>At Enfuse.IO, I contribute to production-ready, data-driven systems by combining modern software practices with advanced data science and cloud platforms. My work spans statistical analysis, data preprocessing, and the integration of machine learning models to solve complex, real-world problems — always with a focus on driving client success.</p>
+        <p>I hold a Master of Professional Studies in Data Science from the University of Maryland, Baltimore County, where I built a strong foundation in machine learning, statistical modeling, and data visualization.</p>
+        <p>Passionate about applying data to solve meaningful problems, I thrive in multidisciplinary teams that value innovation, clarity, and impact.</p>
+        <p>Proficient in Python, with a strong background in data visualization, predictive modeling, and root cause analysis, I enjoy turning data into actionable insights and effectively communicating complex technical insights to stakeholders. Passionate about building intelligent embodied AI products and deploying ML in the real world.</p>
+      </div>
+
     </div>
   </div>
 </header>
@@ -85,13 +102,13 @@
       <h2 class="section-title">Work Experience</h2>
     </div>
 
-    <!-- Enfuse.IO -->
+    <!-- Enfuse.io -->
     <div class="work-card" id="wc-enfuse">
       <div class="scan-line"></div>
       <div class="work-card-header" onclick="toggleWork('wc-enfuse')">
-        <img class="work-logo" src="portfolio_material/Work_Experience/enfuse_io_logo.png" alt="Enfuse.IO">
+        <img class="work-logo" src="portfolio_material/Work_Experience/enfuse_io_logo.png" alt="Enfuse.io">
         <div class="work-meta">
-          <p class="work-company">Enfuse.IO</p>
+          <p class="work-company">Enfuse.io</p>
           <p class="work-role">Data Scientist</p>
           <p class="work-dates">July 2025 – Present</p>
         </div>

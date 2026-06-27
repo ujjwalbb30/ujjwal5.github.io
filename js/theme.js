@@ -28,17 +28,16 @@
 (function () {
   var WORDS = [
     'UJJWAL',
-    'ROBOTICS',
     'DATA SCIENCE',
     'MACHINE LEARNING',
-    'EMBODIED AI',
+    'DEEP LEARNING',
     'PERCEPTION',
+    'LOCALIZATION',
     'INTELLIGENCE',
     'NEURAL NETS',
+    'ROBOTICS',
     'PHYSICAL AI',
-    'DEEP LEARNING',
-    'LOCALIZATION',
-    'UJJWAL',
+    'EMBODIED AI',
   ];
 
   var CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
@@ -98,4 +97,32 @@
   } else {
     init();
   }
+})();
+
+/* ── Hero split animation on scroll ───────────────────────
+   The masthead is 200vh tall with a sticky inner panel.
+   As the user scrolls through the first 100vh of the hero,
+   the layout transitions from centered → split two-column.
+   ─────────────────────────────────────────────────────────── */
+(function () {
+  var heroInner = document.querySelector('.hero-inner');
+  var masthead  = document.querySelector('.masthead');
+  if (!heroInner || !masthead) return;
+
+  function onScroll() {
+    var scrollY      = window.scrollY;
+    var viewportH    = window.innerHeight;
+    // scroll zone = the extra 100vh we added beyond the sticky panel
+    var scrollZone   = masthead.offsetHeight - viewportH;
+    var progress     = scrollZone > 0 ? Math.min(1, scrollY / scrollZone) : 0;
+
+    if (progress > 0.15) {
+      heroInner.classList.add('hero-split');
+    } else {
+      heroInner.classList.remove('hero-split');
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 })();
