@@ -98,7 +98,6 @@
 <section class="page-section bg-primary" id="work">
   <div class="container">
     <div class="section-head">
-      <span class="section-label">// career</span>
       <h2 class="section-title">Work Experience</h2>
     </div>
 
@@ -122,20 +121,26 @@
 
           <div class="work-project">
             <p class="work-project-title">Package Planning Module</p>
-            <ul>
-              <li>Developed a high-volume Package Planning module integrated with Paccurate for cubing optimization, cartonization and palletization (single and multi-stage).</li>
-              <li>Determines which items go into which boxes, in what orientation, to optimize space along with hazardous material compliance.</li>
-              <li>Structured output feeds directly to floor workers or sorter/packing robots for automated pick-and-pack operations.</li>
-            </ul>
+            <div class="work-project-row">
+              <img class="work-project-row-img" src="portfolio_material/Work_Experience/enfuse_aimsplus_package_planner_full.png" alt="Package Planning Module">
+              <ul>
+                <li>Developed a high-volume Package Planning module integrated with Paccurate for cubing optimization, cartonization and palletization (single and multi-stage).</li>
+                <li>Determines which items go into which boxes, in what orientation, to optimize space along with hazardous material compliance.</li>
+                <li>Structured output feeds directly to floor workers or sorter/packing robots for automated pick-and-pack operations.</li>
+              </ul>
+            </div>
           </div>
 
           <div class="work-project">
             <p class="work-project-title">End-to-End Shipping Label Pipeline</p>
-            <ul>
-              <li><strong>Rate Shopping &amp; Carrier Optimization:</strong> evaluated shipment attributes (dimensions, weight, origin/destination) to auto-select optimal carrier and service level.</li>
-              <li><strong>International Compliance:</strong> automated customs document generation using SKU-level pricing, HTS codes, and ECCNs for cross-border shipments.</li>
-              <li><strong>Insurance Procurement:</strong> automatically triggered coverage for high-value shipments exceeding declared value thresholds.</li>
-            </ul>
+            <div class="work-project-row">
+              <img class="work-project-row-img" src="portfolio_material/Work_Experience/enfuse_aimsplus_shipping_label.png" alt="Shipping Label Pipeline">
+              <ul>
+                <li><strong>Rate Shopping &amp; Carrier Optimization:</strong> evaluated shipment attributes (dimensions, weight, origin/destination) to auto-select optimal carrier and service level.</li>
+                <li><strong>International Compliance:</strong> automated customs document generation using SKU-level pricing, HTS codes, and ECCNs for cross-border shipments.</li>
+                <li><strong>Insurance Procurement:</strong> automatically triggered coverage for high-value shipments exceeding declared value thresholds.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -161,31 +166,40 @@
 
           <div class="work-project">
             <p class="work-project-title">Real-Time 3D Perception &amp; Localization — Mobile Platforms</p>
-            <ul>
-              <li>Developed a real-time shared 3D perception system deployable on autonomous vehicles, robots, and wearables using NVIDIA Jetson Orin.</li>
-              <li>Pipeline: 3D Gaussian Splatting (nerfstudio) as global environment representation → 6DGS for 6-DoF camera pose regression → YOLO for object detection → SAM for segmentation masks → back-projected into 3D relative to localized camera pose.</li>
-              <li>Applications: autonomous navigation, AR, warehouse robotics, search &amp; rescue, retail inventory management.</li>
-            </ul>
+            <div class="work-project-row">
+              <img class="work-project-row-img" src="portfolio_material/Work_Experience/atos_z_data_perception_module.png" alt="3D Perception Module">
+              <ul>
+                <li>Developed a real-time shared 3D perception system deployable on autonomous vehicles, robots, and wearables using NVIDIA Jetson Orin.</li>
+                <li>Pipeline: 3D Gaussian Splatting (nerfstudio) as global environment representation → 6DGS for 6-DoF camera pose regression → YOLO for object detection → SAM for segmentation masks → back-projected into 3D relative to localized camera pose.</li>
+                <li>Applications: autonomous navigation, AR, warehouse robotics, search &amp; rescue, retail inventory management.</li>
+              </ul>
+            </div>
           </div>
 
           <div class="work-project">
             <p class="work-project-title">Indoor Path Navigation in Augmented Reality</p>
-            <ul>
-              <li>Engineered an automated indoor navigation pipeline for AR-guided wayfinding, eliminating manual store mapping.</li>
-              <li>Pipeline: RandLA-Net point cloud segmentation (fine-tuned) → top-down 2D occupancy map → Neural A* pathfinding → path projected back into 3D as AR navigation overlay.</li>
-              <li>Reduced manual store mapping effort by 2+ hours per store through full automation of layout generation.</li>
-              <li>Applications: retail navigation, warehouse logistics, hospital wayfinding, emergency response.</li>
-            </ul>
+            <div class="work-project-row">
+              <img class="work-project-row-img" src="portfolio_material/Work_Experience/atos_z_data_path_navigation_module.png" alt="AR Path Navigation">
+              <ul>
+                <li>Engineered an automated indoor navigation pipeline for AR-guided wayfinding, eliminating manual store mapping.</li>
+                <li>Pipeline: RandLA-Net point cloud segmentation (fine-tuned) → top-down 2D occupancy map → Neural A* pathfinding → path projected back into 3D as AR navigation overlay.</li>
+                <li>Reduced manual store mapping effort by 2+ hours per store through full automation of layout generation.</li>
+                <li>Applications: retail navigation, warehouse logistics, hospital wayfinding, emergency response.</li>
+              </ul>
+            </div>
           </div>
 
           <div class="work-project">
             <p class="work-project-title">Retail Product Localization — BrainCorp</p>
-            <ul>
-              <li>Built an end-to-end system identifying precise aisle–shelf–slot position of any product for real-time inventory monitoring and planogram compliance.</li>
-              <li>Custom Gradio annotation tool for aisle-shelf-slot labeling → heuristic shelf detection via pixel intensity analysis → slot segmentation by product boundary detection → full Gradio debugging suite.</li>
-              <li>Hardened with unit tests for robustness across store layouts and lighting conditions.</li>
-              <li>Applications: inventory monitoring, planogram compliance, retail analytics, robotic restocking.</li>
-            </ul>
+            <div class="work-project-row">
+              <img class="work-project-row-img" src="portfolio_material/Work_Experience/atos_z_data_shelf_localization.png" alt="Shelf Localization">
+              <ul>
+                <li>Built an end-to-end system identifying precise aisle–shelf–slot position of any product for real-time inventory monitoring and planogram compliance.</li>
+                <li>Custom Gradio annotation tool for aisle-shelf-slot labeling → heuristic shelf detection via pixel intensity analysis → slot segmentation by product boundary detection → full Gradio debugging suite.</li>
+                <li>Hardened with unit tests for robustness across store layouts and lighting conditions.</li>
+                <li>Applications: inventory monitoring, planogram compliance, retail analytics, robotic restocking.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -209,23 +223,27 @@
             R&amp;D of pumps at the Center for Research and Innovation (CRI). Engaged in all phases of design — drafting, dimensioning, tolerancing, prototyping, and documentation across multiple pump product lines.
           </p>
 
-          <img class="work-img" src="portfolio_material/Work_Experience/havellspump.PNG" alt="Havells Pump">
-
           <div class="work-project">
             <p class="work-project-title">Contaminant Ingress Prevention for Monoblock Pumps</p>
-            <ul>
-              <li>Developed the cheapest implementable design solution to counter contaminant ingress across all monoblock pump assembly designs.</li>
-              <li>New designs introduced a special sealing solution deployed across 14 pump SKUs.</li>
-              <li>Filed patent application <em>"Pump Set Motor Assembly For Preventing Contaminant Ingress"</em> (App. No. 201911005525, filed 12/02/2019, published 14/08/2020).</li>
-            </ul>
+            <div class="work-project-row">
+              <img class="work-project-row-img" src="portfolio_material/Work_Experience/havellspump.PNG" alt="Havells Pump">
+              <ul>
+                <li>Developed the cheapest implementable design solution to counter contaminant ingress across all monoblock pump assembly designs.</li>
+                <li>New designs introduced a special sealing solution deployed across 14 pump SKUs.</li>
+                <li>Filed patent application <em>"Pump Set Motor Assembly For Preventing Contaminant Ingress"</em> (App. No. 201911005525, filed 12/02/2019, published 14/08/2020).</li>
+              </ul>
+            </div>
           </div>
 
           <div class="work-project">
             <p class="work-project-title">Pumps R&amp;D Lab CAD Layout</p>
-            <ul>
-              <li>Aided Purchase Order Request finalization for the pumps testing and validation lab at CRI.</li>
-              <li>Prepared full CAD layout including testing tanks, tool tables, equipment fixtures, and pipeline layout.</li>
-            </ul>
+            <div class="work-project-row">
+              <img class="work-project-row-img" src="portfolio_material/Work_Experience/havells_lab.png" alt="Pumps R&D Lab CAD Layout">
+              <ul>
+                <li>Aided Purchase Order Request finalization for the pumps testing and validation lab at CRI.</li>
+                <li>Prepared full CAD layout including testing tanks, tool tables, equipment fixtures, and pipeline layout.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -245,15 +263,17 @@
       </div>
       <div class="work-body">
         <div class="work-body-inner">
-          <img class="work-img" src="portfolio_material/Work_Experience/hil.gif" alt="Hardware-In-Loop rig">
           <div class="work-project">
             <p class="work-project-title">Hardware-In-Loop Test Rig — EV Thermal Management System</p>
-            <ul>
-              <li>Worked at the Advanced Vehicle Engineering Centre (AVEC), SATM, on a HIL test rig for EV/Hybrid Vehicle Thermal Management Systems, funded by Arrival (formerly Charge Automotive).</li>
-              <li>Completed literature review, identified research gaps, and compared heat exchangers, thermal fluids, and DAQ systems.</li>
-              <li>Developed full CAD models of test rig and simulation chamber in CATIA V5, rendered in Keyshot for research and company presentations.</li>
-              <li>Aided in finalizing the Purchase Order Request (POR) for the lab setup.</li>
-            </ul>
+            <div class="work-project-row">
+              <img class="work-project-row-img" src="portfolio_material/Work_Experience/hil.gif" alt="Hardware-In-Loop rig">
+              <ul>
+                <li>Worked at the Advanced Vehicle Engineering Centre (AVEC), SATM, on a HIL test rig for EV/Hybrid Vehicle Thermal Management Systems, funded by Arrival (formerly Charge Automotive).</li>
+                <li>Completed literature review, identified research gaps, and compared heat exchangers, thermal fluids, and DAQ systems.</li>
+                <li>Developed full CAD models of test rig and simulation chamber in CATIA V5, rendered in Keyshot for research and company presentations.</li>
+                <li>Aided in finalizing the Purchase Order Request (POR) for the lab setup.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -266,14 +286,13 @@
 <section class="page-section" id="education">
   <div class="container">
     <div class="section-head">
-      <span class="section-label">// background</span>
       <h2 class="section-title">Education</h2>
     </div>
 
     <!-- UMBC -->
     <div class="edu-card" id="ec-umbc">
       <div class="edu-header" onclick="toggleEdu('ec-umbc')">
-        <div class="edu-logo-placeholder">UMBC</div>
+        <img class="work-logo" src="portfolio_material/Education/umbc-logo-vertical.png" alt="UMBC">
         <div class="edu-meta">
           <p class="edu-degree">M.P.S. — Data Science</p>
           <p class="edu-school">University of Maryland, Baltimore County</p>
@@ -296,19 +315,19 @@
           <p class="edu-sub-title">Projects</p>
 
           <div class="edu-project">
-            <p class="edu-project-title">California Drought Analysis &amp; Prediction</p>
+            <p class="edu-project-title">California Drought Analysis &amp; Prediction <a class="edu-project-link" href="https://github.com/ujjwalbb30/DATA_601_California_Drought_Analysis_Prediction" target="_blank" rel="noopener" aria-label="View code"><i class="fas fa-code"></i></a></p>
             <p>Examined 21 years of meteorological and drought severity data (400K+ instances). Employed Random Forests + Voting Ensemble for drought detection (85% accuracy) and OneVsRest Classifier for intensity classification (73% F1-score) across 5 Palmer Drought Severity Index classes.</p>
           </div>
           <div class="edu-project">
-            <p class="edu-project-title">Twitter Sentiment Analysis &amp; Stock Market Prediction</p>
+            <p class="edu-project-title">Twitter Sentiment Analysis &amp; Stock Market Prediction <a class="edu-project-link" href="https://github.com/ujjwalbb30/DATA_602_Twitter_Sentiment_Analysis_Stock_Market_Prediction" target="_blank" rel="noopener" aria-label="View code"><i class="fas fa-code"></i></a></p>
             <p>Condensed 5-year tweet data (3M+ samples), computed sentiment via VADER &amp; TextBlob, established significance via Spearman Coefficient. Built LSTM multivariate time-series forecasting model combining price and sentiment — improved prediction error by 25%.</p>
           </div>
           <div class="edu-project">
-            <p class="edu-project-title">ASL Image Classification</p>
+            <p class="edu-project-title">ASL Image Classification <a class="edu-project-link" href="https://github.com/ujjwalbb30/CMSC_678_ASL_image_classification_ML" target="_blank" rel="noopener" aria-label="View code"><i class="fas fa-code"></i></a></p>
             <p>Model performance comparison study for CNNs classifying 87,000 ASL images into 29 classes. Investigated kernel sizes, activation functions (ReLU, Swish, Mish), and image augmentation. Achieved 97.23% (non-augmented) and 82.44% (augmented) accuracy.</p>
           </div>
           <div class="edu-project">
-            <p class="edu-project-title">Document Classification — Multimodal (Image + Text)</p>
+            <p class="edu-project-title">Document Classification — Multimodal (Image + Text) <a class="edu-project-link" href="https://github.com/ujjwalbb30/Ujjwal_DATA606" target="_blank" rel="noopener" aria-label="View code"><i class="fas fa-code"></i></a></p>
             <p>Retrieved textual features via OCR and combined with image features for document classification, achieving 83.31% accuracy.</p>
           </div>
 
@@ -378,7 +397,6 @@
 <section class="page-section bg-primary" id="certifications">
   <div class="container">
     <div class="section-head">
-      <span class="section-label">// learning</span>
       <h2 class="section-title">Certifications</h2>
     </div>
 
@@ -528,7 +546,6 @@
 <section class="page-section" id="achievements">
   <div class="container">
     <div class="section-head">
-      <span class="section-label">// milestones</span>
       <h2 class="section-title">Achievements</h2>
     </div>
 
@@ -622,7 +639,6 @@
 <section class="page-section bg-primary" id="sports">
   <div class="container">
     <div class="section-head">
-      <span class="section-label">// athletics</span>
       <h2 class="section-title">Sports</h2>
     </div>
 
@@ -775,7 +791,6 @@
 <section class="page-section" id="contact">
   <div class="container">
     <div class="section-head">
-      <span class="section-label">// connect</span>
       <h2 class="section-title">Contact Me</h2>
     </div>
 
@@ -787,11 +802,11 @@
           <a class="contact-link" href="mailto:ujjwaltech.05@gmail.com">
             <i class="fas fa-envelope"></i> ujjwaltech.05@gmail.com
           </a>
-          <a class="contact-link" href="https://www.linkedin.com/in/ujjwal-kalkhande" target="_blank" rel="noopener">
-            <i class="fab fa-linkedin-in"></i> linkedin.com/in/ujjwal-kalkhande
+          <a class="contact-link" href="https://www.linkedin.com/in/ujjwal5/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin-in"></i> linkedin.com/in/ujjwal5/
           </a>
-          <a class="contact-link" href="https://github.com/ujjwal5" target="_blank" rel="noopener">
-            <i class="fab fa-github"></i> github.com/ujjwal5
+          <a class="contact-link" href="https://github.com/ujjwalbb30" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> github.com/ujjwalbb30
           </a>
         </div>
       </div>
@@ -833,10 +848,10 @@
       </div>
       <div class="col-lg-4 mb-4 mb-lg-0">
         <h4>Around the Web</h4>
-        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/ujjwal5" target="_blank" rel="noopener" aria-label="GitHub">
+        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/ujjwalbb30" target="_blank" rel="noopener" aria-label="GitHub">
           <i class="fab fa-fw fa-github"></i>
         </a>
-        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/ujjwal-kalkhande" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/ujjwal5/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <i class="fab fa-fw fa-linkedin-in"></i>
         </a>
         <a class="btn btn-outline-light btn-social mx-1" href="mailto:ujjwaltech.05@gmail.com" aria-label="Email">
@@ -845,7 +860,7 @@
       </div>
       <div class="col-lg-4">
         <h4>Built By</h4>
-        <p class="lead mb-0">Ujjwal Kalkhande</p>
+        <p class="lead mb-0">Ujjwal Kalkhande with Claude Code</p>
       </div>
     </div>
   </div>

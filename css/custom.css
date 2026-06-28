@@ -401,7 +401,7 @@ img { max-width: 100%; height: auto; }
   border-radius: 8px;
   border: 1px solid var(--gold-border);
   object-fit: contain;
-  background: var(--surface2);
+  background: #ffffff;
   padding: 4px;
   flex-shrink: 0;
 }
@@ -479,12 +479,40 @@ img { max-width: 100%; height: auto; }
 .work-project ul li { margin-bottom: .35rem; }
 .work-project ul li::marker { color: var(--gold); }
 
-/* image inside expanded work section */
+/* image inside expanded work section (legacy top-banner use) */
 .work-img {
   width: 100%; max-height: 220px;
   object-fit: cover; border-radius: 4px;
   border: 1px solid var(--gold-border);
   margin-bottom: 1rem;
+}
+
+/* side-by-side: image left, bullets right */
+.work-project-row {
+  display: grid !important;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+.work-project-row-img {
+  /* constrain size without cropping — browser maintains aspect ratio */
+  width: auto !important;
+  height: auto !important;
+  max-width: 180px !important;
+  max-height: 200px !important;
+  border-radius: 6px;
+  border: 1px solid var(--gold-border);
+  background: var(--surface2);
+  padding: 4px;
+  display: block;
+}
+/* ul resets so it sits cleanly in the right grid column */
+.work-project-row ul {
+  margin: 0;
+}
+/* image on the right instead of left */
+.work-project-row.img-right {
+  grid-template-columns: 1fr auto;
 }
 
 /* ── Education ───────────────────────────────────────────── */
@@ -524,7 +552,7 @@ img { max-width: 100%; height: auto; }
   border-radius: 8px;
   border: 1px solid var(--blue-border);
   object-fit: contain;
-  background: var(--surface2);
+  background: #ffffff;
   padding: 4px;
   flex-shrink: 0;
 }
@@ -584,6 +612,15 @@ img { max-width: 100%; height: auto; }
   font-weight: 600; font-size: .86rem;
   color: var(--text) !important; margin-bottom: .4rem;
 }
+.edu-project-link {
+  margin-left: .5rem;
+  color: var(--gold) !important;
+  font-size: .78rem;
+  opacity: .7;
+  transition: opacity var(--t);
+  vertical-align: middle;
+}
+.edu-project-link:hover { opacity: 1; }
 .edu-project p { color: var(--text2); font-size: .83rem; line-height: 1.65; margin: 0; }
 .edu-img {
   width: 100%; max-height: 180px;
