@@ -109,6 +109,12 @@
   var masthead  = document.querySelector('.masthead');
   if (!heroInner || !masthead) return;
 
+  // On mobile the hero is a single-column static layout — skip the animation.
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    document.documentElement.style.setProperty('--hp', '0');
+    return;
+  }
+
   var rafPending = false;
 
   function smoothStep(x) {

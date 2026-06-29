@@ -1137,11 +1137,91 @@ footer.footer .lead, footer.footer p { color: var(--text2) !important; font-size
   .masthead-heading { font-size: 2.4rem !important; }
   .cert-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* ── Tablet & mobile (≤768px) ──────────────────────────── */
+@media (max-width: 768px) {
+  /* Contact grid already handled above */
+
+  /* Hero: disable scroll-split, show stacked single column */
+  .masthead {
+    min-height: 100vh !important; /* no scroll zone — animation disabled by JS */
+    padding: 0 !important;
+  }
+  .hero-sticky {
+    height: auto !important;
+    min-height: 100vh;
+    padding: 6rem 1.25rem 3rem;
+    align-items: flex-start;
+  }
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+  }
+  .hero-left {
+    flex: 0 0 100% !important;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-right { display: none !important; } /* hidden on mobile — bio shows in short-bio */
+  .hero-short-bio {
+    max-height: none !important;  /* always visible — no scroll animation */
+    opacity: 1 !important;
+    max-width: 100% !important;
+    padding: 0 .5rem;
+  }
+  .hero-short-bio p {
+    white-space: normal !important;
+    font-size: .85rem !important;
+  }
+
+  /* Section padding */
+  .page-section { padding: 3.5rem 0 !important; }
+
+  /* Work card header: stack logo + meta on narrow screens */
+  .work-card-header { flex-wrap: wrap; gap: .75rem; }
+  .work-logo { width: 48px !important; height: 48px !important; }
+
+  /* Work / education side-by-side image rows → stack */
+  .work-project-row,
+  .work-project-row.img-right,
+  .work-project-row.img-lg {
+    grid-template-columns: 1fr !important;
+  }
+  .work-project-row.img-right .work-project-row-img {
+    order: -1; /* image above text even when img-right */
+  }
+  .work-project-row-img {
+    max-width: 100% !important;
+    max-height: 220px !important;
+    width: 100% !important;
+    object-fit: contain;
+  }
+  .work-project-row.img-lg .work-project-row-img {
+    max-width: 100% !important;
+    max-height: 260px !important;
+  }
+
+  /* Cert grid */
+  .cert-grid { grid-template-columns: 1fr; }
+
+  /* Sports preview row */
+  .sports-preview-row { grid-template-columns: 1fr !important; gap: 1rem; }
+  .sports-preview-img { max-height: 180px; }
+
+  /* Footer columns: center-stacked */
+  footer.footer .row { flex-direction: column; align-items: center; text-align: center; }
+  footer.footer .col-lg-4 { margin-bottom: 1.5rem; }
+}
+
+/* ── Phone (≤576px) ─────────────────────────────────────── */
 @media (max-width: 576px) {
-  .masthead { padding: 7rem 0 4.5rem !important; }
   .masthead-heading { font-size: 2rem !important; }
+  .hero-role { font-size: .85rem !important; }
   .hero-cta { flex-direction: column; align-items: center; }
   .cert-grid { grid-template-columns: 1fr; }
   .ach-grid { grid-template-columns: 1fr; }
-  .sports-media-row { grid-template-columns: 1fr 1fr; }
+  .sports-media-row { grid-template-columns: 1fr; }
+  .section-title { font-size: 1.4rem !important; }
 }
