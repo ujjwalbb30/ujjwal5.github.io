@@ -131,3 +131,67 @@
 
   update(); // set initial state
 })();
+
+/* ── Animated favicon — rotating gold arc around Iron Man icon ─── */
+(function () {
+  var SIZE   = 32;
+  var CX     = SIZE / 2;
+  var CY     = SIZE / 2;
+  var R      = 13;           // ring radius
+  var SPEED  = 0.04;         // radians per frame
+  var ARC    = Math.PI * 1.3; // arc length
+
+  var canvas = document.createElement('canvas');
+  canvas.width  = SIZE;
+  canvas.height = SIZE;
+  var ctx = canvas.getContext('2d');
+
+  var faviconLink = document.querySelector("link[rel='icon']");
+  if (!faviconLink) {
+    faviconLink = document.createElement('link');
+    faviconLink.rel = 'icon';
+    document.head.appendChild(faviconLink);
+  }
+
+  var img = new Image();
+  img.src = 'img/iconfinder_ironman.png';
+  img.onload = function () {
+    var angle = 0;
+    var lastTick = 0;
+
+    function tick(ts) {
+      if (ts - lastTick < 40) { requestAnimationFrame(tick); return; } // ~25 fps
+      lastTick = ts;
+
+      ctx.clearRect(0, 0, SIZE, SIZE);
+
+      // Gold glow arc (behind icon)
+      ctx.save();
+      ctx.shadowColor = '#c9a644';
+      ctx.shadowBlur  = 7;
+      ctx.strokeStyle = '#c9a644';
+      ctx.lineWidth   = 2.5;
+      ctx.lineCap     = 'round';
+      ctx.beginPath();
+      ctx.arc(CX, CY, R, angle, angle + ARC);
+      ctx.stroke();
+
+      // Dim trailing arc on opposite side
+      ctx.globalAlpha = 0.25;
+      ctx.shadowBlur  = 0;
+      ctx.beginPath();
+      ctx.arc(CX, CY, R, angle + ARC, angle + Math.PI * 2);
+      ctx.stroke();
+      ctx.restore();
+
+      // Iron Man icon on top
+      ctx.drawImage(img, 3, 3, SIZE - 6, SIZE - 6);
+
+      faviconLink.href = canvas.toDataURL('image/png');
+      angle += SPEED;
+      requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+  };
+})();
