@@ -18,6 +18,12 @@
 
 <body id="page-top">
 
+<!-- ══ Background morph ═══════════════════════════════════ -->
+<div id="bg-morph" aria-hidden="true">
+  <div class="bg-layer bg-layer-base"></div>
+  <div class="bg-layer bg-layer-alt"></div>
+</div>
+
 <!-- ══ Navbar ══════════════════════════════════════════════ -->
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
   <div class="container">
@@ -876,22 +882,10 @@
 <!-- ══ Footer ════════════════════════════════════════════════ -->
 <footer class="footer text-center">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-lg-4 mb-4 mb-lg-0">
         <h4>Location</h4>
         <p class="lead mb-0">San Jose, California</p>
-      </div>
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <h4>Around the Web</h4>
-        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/ujjwalbb30" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="fab fa-fw fa-github"></i>
-        </a>
-        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/ujjwal5/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="fab fa-fw fa-linkedin-in"></i>
-        </a>
-        <a class="btn btn-outline-light btn-social mx-1" href="mailto:ujjwaltech.05@gmail.com" aria-label="Email">
-          <i class="fas fa-fw fa-envelope"></i>
-        </a>
       </div>
       <div class="col-lg-4">
         <h4>Built By</h4>
@@ -960,8 +954,7 @@
     basketball: {
       images: [
         { src: 'portfolio_material/Sports/firstyearbb.jpg', cap: '1st Year — ITUSA 3rd' },
-        { src: 'portfolio_material/Sports/bb.png',          cap: 'Final Year — Captain' },
-        { src: 'portfolio_material/Sports/sports.png',      cap: 'College Sports' }
+        { src: 'portfolio_material/Sports/bb.png',          cap: 'Final Year — Captain' }
       ],
       events: [
         { name: 'Inter-Technology Universities Basketball 2014–15',          result: '3rd Position' },

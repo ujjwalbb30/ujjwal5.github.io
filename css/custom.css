@@ -44,6 +44,42 @@
   --nav-bg:      rgba(240,243,250,0.92);
 }
 
+/* ── Background morph ───────────────────────────────────── */
+#bg-morph {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0.09;
+  mix-blend-mode: screen;         /* adds image light onto dark backgrounds */
+}
+[data-theme="light"] #bg-morph {
+  mix-blend-mode: multiply;       /* multiplies image into light backgrounds */
+  opacity: 0.09;
+}
+.bg-layer {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-layer-base {
+  background-image: url('../img/background_image_actual.png');
+}
+[data-theme="dark"] .bg-layer-alt {
+  background-image: url('../img/background_image_dark.png');
+  animation: bg-pulse 8s ease-in-out infinite;
+}
+[data-theme="light"] .bg-layer-alt {
+  background-image: url('../img/background_image_light.png');
+  animation: bg-pulse 8s ease-in-out infinite;
+}
+@keyframes bg-pulse {
+  0%, 100% { opacity: 0; }
+  50%       { opacity: 1; }
+}
+
 /* ── Reset / Base ────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -1086,7 +1122,7 @@ footer.footer .lead, footer.footer p { color: var(--text2) !important; font-size
   object-fit: contain;
   margin-left: 5px;
   vertical-align: middle;
-  animation: ai-pulse 2s ease-in-out infinite;
+  animation: ai-pulse 4s ease-in-out infinite;
 }
 
 /* ── Scroll to top ───────────────────────────────────────── */
