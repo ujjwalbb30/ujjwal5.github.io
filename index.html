@@ -67,8 +67,8 @@
         <!-- Short bio — fades out as right panel appears -->
         <div class="hero-short-bio">
           <p>Data Scientist with multidisciplinary background spanning data science, AI, ML and mechanical design.</p>
-          <p>4+ years in developing scalable, Python-based machine learning pipelines, real-time 3D perception and localization systems.</p>
-          <p>Currently at Enfuse.io — previously Atos Z Data, Havells, Cranfield University.</p>
+          <p>4+ years developing scalable, Python-based machine learning pipelines, real-time 3D perception and localization systems.</p>
+          <p>Currently at Enfuse.io — previously Atos Z Data Inc., Havells India Ltd., Cranfield University.</p>
           <small>San Jose, California</small>
         </div>
 
@@ -84,10 +84,9 @@
 
       <!-- RIGHT: full intro paragraphs — slides in on scroll -->
       <div class="hero-right">
-        <p>At Enfuse.IO, I contribute to production-ready, data-driven systems by combining modern software practices with advanced data science and cloud platforms. My work spans statistical analysis, data preprocessing, and the integration of machine learning models to solve complex, real-world problems — always with a focus on driving client success.</p>
-        <p>I hold a Master of Professional Studies in Data Science from the University of Maryland, Baltimore County, where I built a strong foundation in machine learning, statistical modeling, and data visualization.</p>
-        <p>Passionate about applying data to solve meaningful problems, I thrive in multidisciplinary teams that value innovation, clarity, and impact.</p>
-        <p>Proficient in Python, with a strong background in data visualization, predictive modeling, and root cause analysis, I enjoy turning data into actionable insights and effectively communicating complex technical insights to stakeholders. Passionate about building intelligent embodied AI products and deploying ML in the real world.</p>
+        <p>At Enfuse.io, I build production-ready, data-driven systems at the intersection of software engineering, machine learning, and cloud platforms. My work spans the full pipeline - from statistical analysis and data processing, to deploying ML models that solve real-world problems and drive measurable client outcomes.</p>
+        <p>I hold a Master of Professional Studies in Data Science from the University of Maryland, Baltimore County, where I developed a strong foundation in machine learning, statistical modeling, and data visualization.</p>
+        <p>I'm drawn to problems where data meets the physical world - particularly, intelligent, embodied AI systems and real-world ML deployment. Proficient in Python, I specialize in predictive modeling, root cause analysis, and translating complex technical findings into clear, actionable insights for stakeholders - a skill that helps me thrive in multidisciplinary teams where innovation and rigor drive real impact.</p>
       </div>
 
     </div>
@@ -364,23 +363,29 @@
 
           <p class="edu-sub-title">Minor Project</p>
           <div class="edu-project">
-            <img class="edu-img" src="portfolio_material/Education/minor_project.png" alt="All-Terrain Robot">
             <p class="edu-project-title">Suspension-Equipped All-Terrain Robot</p>
-            <p>Modeled and fabricated a custom suspension-equipped robot with a pick-and-place gripper. DC motors for drive, Johnson motor and servo for gripper, Arduino Mega 800, LiPo 12V 2200mAh battery. Full CAD assembly in CATIA V5.</p>
+            <div class="work-project-row img-lg">
+              <img class="work-project-row-img" src="portfolio_material/Education/minor_project.png" alt="All-Terrain Robot">
+              <p>Modeled and fabricated a custom suspension-equipped robot with a pick-and-place gripper. DC motors for drive, Johnson motor and servo for gripper, Arduino Mega 800, LiPo 12V 2200mAh battery. Full CAD assembly in CATIA V5.</p>
+            </div>
           </div>
 
           <p class="edu-sub-title">Capstone Project</p>
           <div class="edu-project">
-            <img class="edu-img" src="portfolio_material/Education/major_project.png" alt="Mechanical Charger">
             <p class="edu-project-title">Portable Mechanical Battery Charger</p>
-            <p>Designed and fabricated a human-powered mechanical charger using a 1:27 compound gear train (3 pairs of 69T/23T spur gears) driving a dynamo, generating 12V output via a diode bridge rectifier.</p>
+            <div class="work-project-row img-lg">
+              <img class="work-project-row-img" src="portfolio_material/Education/major_project.png" alt="Mechanical Charger">
+              <p>Designed and fabricated a human-powered mechanical charger using a 1:27 compound gear train (3 pairs of 69T/23T spur gears) driving a dynamo, generating 12V output via a diode bridge rectifier.</p>
+            </div>
           </div>
 
           <p class="edu-sub-title">Society of Automotive Engineers</p>
           <div class="edu-project">
-            <img class="edu-img" src="portfolio_material/Education/fsae.png" alt="FSAE SUPRA">
             <p class="edu-project-title">SUPRA SAEINDIA 2016 — Buddh International Circuit</p>
-            <p>Developed and validated tubular space-frame chassis via structural and harmonic FEA. Designed gear shifter and bell cranks. Led Business Presentation event. National ranking: 29th of 145 teams.</p>
+            <div class="work-project-row img-lg">
+              <img class="work-project-row-img" src="portfolio_material/Education/fsae.png" alt="FSAE SUPRA">
+              <p>Developed and validated tubular space-frame chassis via structural and harmonic FEA. Designed gear shifter and bell cranks. Led Business Presentation event. National ranking: 29th of 145 teams.</p>
+            </div>
           </div>
 
           <p class="edu-sub-title">Key Coursework</p>
@@ -400,140 +405,165 @@
       <h2 class="section-title">Certifications</h2>
     </div>
 
-    <p class="cert-platform-title">Coursera</p>
-    <div class="cert-grid">
-
-      <div class="cert-flip">
-        <div class="cert-flip-inner">
-          <div class="cert-front">
-            <p class="cert-platform-tag">Coursera</p>
-            <p class="cert-title">Machine Learning</p>
-            <p class="cert-issuer">Stanford University · Dr. Andrew Ng</p>
-          </div>
-          <div class="cert-back">
-            <p class="cert-back-label">Topics</p>
-            <p class="cert-back-topics">Supervised learning (SVM, neural networks, parametric/non-parametric) · Unsupervised learning (clustering, dimensionality reduction, recommender systems) · Bias/variance theory · ML innovation best practices</p>
-          </div>
-        </div>
+    <!-- Coursera -->
+    <div class="cert-group" id="cg-coursera">
+      <div class="cert-group-header" onclick="toggleCertGroup('cg-coursera')">
+        <span class="cert-platform-title">Coursera</span>
+        <i class="fas fa-chevron-down cert-group-chevron"></i>
       </div>
-
-      <div class="cert-flip">
-        <div class="cert-flip-inner">
-          <div class="cert-front">
-            <p class="cert-platform-tag">Coursera</p>
-            <p class="cert-title">Deep Learning Specialization</p>
-            <p class="cert-issuer">Stanford University · Dr. Andrew Ng</p>
+      <p class="cert-names-preview">Machine Learning · Deep Learning Specialization · Business Analytics Specialization · Divide &amp; Conquer, Sorting &amp; Searching · Science of Exercise</p>
+      <div class="cert-group-body">
+        <div class="cert-grid">
+          <div class="cert-flip">
+            <div class="cert-flip-inner">
+              <div class="cert-front">
+                <p class="cert-title">Machine Learning</p>
+                <p class="cert-issuer">Stanford University · Dr. Andrew Ng</p>
+              </div>
+              <div class="cert-back">
+                <p class="cert-back-label">Topics</p>
+                <p class="cert-back-topics">Supervised learning (SVM, neural networks, parametric/non-parametric) · Unsupervised learning (clustering, dimensionality reduction, recommender systems) · Bias/variance theory · ML innovation best practices</p>
+              </div>
+            </div>
           </div>
-          <div class="cert-back">
-            <p class="cert-back-label">Courses</p>
-            <p class="cert-back-topics">Neural Networks &amp; Deep Learning · Hyperparameter Tuning, Regularization &amp; Optimization (Adam, batch norm, dropout) · ML Project Structuring · Convolutional Neural Networks (ResNets, object detection, neural style transfer)</p>
+          <div class="cert-flip">
+            <div class="cert-flip-inner">
+              <div class="cert-front">
+                <p class="cert-title">Deep Learning Specialization</p>
+                <p class="cert-issuer">Stanford University · Dr. Andrew Ng</p>
+              </div>
+              <div class="cert-back">
+                <p class="cert-back-label">Courses</p>
+                <p class="cert-back-topics">Neural Networks &amp; Deep Learning · Hyperparameter Tuning, Regularization &amp; Optimization (Adam, batch norm, dropout) · ML Project Structuring · Convolutional Neural Networks (ResNets, object detection, neural style transfer)</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="cert-flip">
-        <div class="cert-flip-inner">
-          <div class="cert-front">
-            <p class="cert-platform-tag">Coursera</p>
-            <p class="cert-title">Business Analytics Specialization</p>
-            <p class="cert-issuer">University of Pennsylvania, Wharton</p>
+          <div class="cert-flip">
+            <div class="cert-flip-inner">
+              <div class="cert-front">
+                <p class="cert-title">Business Analytics Specialization</p>
+                <p class="cert-issuer">University of Pennsylvania, Wharton</p>
+              </div>
+              <div class="cert-back">
+                <p class="cert-back-label">Courses</p>
+                <p class="cert-back-topics">Customer Analytics · Operations Analytics · People Analytics · Accounting Analytics · Business Analytics Capstone</p>
+              </div>
+            </div>
           </div>
-          <div class="cert-back">
-            <p class="cert-back-label">Courses</p>
-            <p class="cert-back-topics">Customer Analytics · Operations Analytics · People Analytics · Accounting Analytics · Business Analytics Capstone</p>
+          <div class="cert-flip">
+            <div class="cert-flip-inner">
+              <div class="cert-front">
+                <p class="cert-title">Divide &amp; Conquer, Sorting &amp; Searching</p>
+                <p class="cert-issuer">Stanford University</p>
+              </div>
+              <div class="cert-back">
+                <p class="cert-back-label">Topics</p>
+                <p class="cert-back-topics">Asymptotic notation · Sorting &amp; searching · Divide &amp; conquer (master method, matrix multiplication, closest pair) · Randomized algorithms (QuickSort, contraction algorithm)</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="cert-flip">
-        <div class="cert-flip-inner">
-          <div class="cert-front">
-            <p class="cert-platform-tag">Coursera</p>
-            <p class="cert-title">Divide &amp; Conquer, Sorting &amp; Searching</p>
-            <p class="cert-issuer">Stanford University</p>
-          </div>
-          <div class="cert-back">
-            <p class="cert-back-label">Topics</p>
-            <p class="cert-back-topics">Asymptotic notation · Sorting &amp; searching · Divide &amp; conquer (master method, matrix multiplication, closest pair) · Randomized algorithms (QuickSort, contraction algorithm)</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cert-flip">
-        <div class="cert-flip-inner">
-          <div class="cert-front">
-            <p class="cert-platform-tag">Coursera</p>
-            <p class="cert-title">Science of Exercise</p>
-            <p class="cert-issuer">University of Colorado Boulder</p>
-          </div>
-          <div class="cert-back">
-            <p class="cert-back-label">Topics</p>
-            <p class="cert-back-topics">Physiological responses to exercise · Carbohydrate, fat &amp; protein metabolism · Muscle fatigue &amp; soreness · Caloric expenditure &amp; BMI · Evidence for exercise in preventing heart disease, diabetes, cancer, and depression</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <p class="cert-platform-title">DataCamp</p>
-    <div class="cert-grid">
-      <div class="cert-flip">
-        <div class="cert-flip-inner">
-          <div class="cert-front">
-            <p class="cert-platform-tag">DataCamp</p>
-            <p class="cert-title">Data Scientist with Python Track</p>
-            <p class="cert-issuer">26-course career track</p>
-          </div>
-          <div class="cert-back">
-            <p class="cert-back-label">Courses (selected)</p>
-            <p class="cert-back-topics">Python, pandas, scikit-learn, Bokeh, SQL, Statistical Thinking, Supervised &amp; Unsupervised Learning, Tree-Based Models, Deep Learning, Network Analysis, Shell, Conda</p>
+          <div class="cert-flip">
+            <div class="cert-flip-inner">
+              <div class="cert-front">
+                <p class="cert-title">Science of Exercise</p>
+                <p class="cert-issuer">University of Colorado Boulder</p>
+              </div>
+              <div class="cert-back">
+                <p class="cert-back-label">Topics</p>
+                <p class="cert-back-topics">Physiological responses to exercise · Carbohydrate, fat &amp; protein metabolism · Muscle fatigue &amp; soreness · Caloric expenditure &amp; BMI · Evidence for exercise in preventing heart disease, diabetes, cancer, and depression</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <p class="cert-platform-title">Udacity</p>
-    <div class="cert-grid">
-      <div class="cert-flip">
-        <div class="cert-flip-inner">
-          <div class="cert-front">
-            <p class="cert-platform-tag">Udacity</p>
-            <p class="cert-title">ML Engineer with Microsoft Azure</p>
-            <p class="cert-issuer">Nanodegree</p>
-          </div>
-          <div class="cert-back">
-            <p class="cert-back-label">Projects</p>
-            <p class="cert-back-topics">Optimizing an ML Pipeline in Azure · AutoML Classification through Azure</p>
+    <!-- DataCamp -->
+    <div class="cert-group" id="cg-datacamp">
+      <div class="cert-group-header" onclick="toggleCertGroup('cg-datacamp')">
+        <span class="cert-platform-title">DataCamp</span>
+        <i class="fas fa-chevron-down cert-group-chevron"></i>
+      </div>
+      <p class="cert-names-preview">Data Scientist with Python Track</p>
+      <div class="cert-group-body">
+        <div class="cert-grid">
+          <div class="cert-flip">
+            <div class="cert-flip-inner">
+              <div class="cert-front">
+                <p class="cert-title">Data Scientist with Python Track</p>
+                <p class="cert-issuer">26-course career track</p>
+              </div>
+              <div class="cert-back">
+                <p class="cert-back-label">Courses (selected)</p>
+                <p class="cert-back-topics">Python, pandas, scikit-learn, Bokeh, SQL, Statistical Thinking, Supervised &amp; Unsupervised Learning, Tree-Based Models, Deep Learning, Network Analysis, Shell, Conda</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <p class="cert-platform-title">Anthropic</p>
-    <div class="cert-grid">
-      <div class="cert-flip">
-        <div class="cert-flip-inner">
-          <div class="cert-front">
-            <p class="cert-platform-tag">Anthropic</p>
-            <p class="cert-title">Claude 101</p>
-            <p class="cert-issuer">Anthropic</p>
-          </div>
-          <div class="cert-back">
-            <p class="cert-back-label">Topics</p>
-            <p class="cert-back-topics">Introduction to Claude's capabilities, prompt engineering fundamentals, responsible AI use</p>
+    <!-- Udacity -->
+    <div class="cert-group" id="cg-udacity">
+      <div class="cert-group-header" onclick="toggleCertGroup('cg-udacity')">
+        <span class="cert-platform-title">Udacity</span>
+        <i class="fas fa-chevron-down cert-group-chevron"></i>
+      </div>
+      <p class="cert-names-preview">ML Engineer with Microsoft Azure — Optimizing an ML Pipeline · AutoML Classification · Capstone Project</p>
+      <div class="cert-group-body">
+        <div class="cert-grid">
+          <div class="cert-flip">
+            <div class="cert-flip-inner">
+              <div class="cert-front">
+                <p class="cert-title">ML Engineer with Microsoft Azure</p>
+                <p class="cert-issuer">Nanodegree</p>
+              </div>
+              <div class="cert-back">
+                <p class="cert-back-label">Projects</p>
+                <ul class="cert-back-list">
+                  <li>Optimizing an ML Pipeline in Azure <a class="edu-project-link" href="https://github.com/ujjwalbb30/Azure_Nanodegree_Optimizing_a_Pipeline_in_Azure" target="_blank" rel="noopener"><i class="fas fa-code"></i></a></li>
+                  <li>AutoML Classification through Azure <a class="edu-project-link" href="https://github.com/ujjwalbb30/Azure_Nanodegree_AutoML_Classification" target="_blank" rel="noopener"><i class="fas fa-code"></i></a></li>
+                  <li>Azure Nanodegree Capstone Project <a class="edu-project-link" href="https://github.com/ujjwalbb30/Azure_Nanodegree_Capstone_Project" target="_blank" rel="noopener"><i class="fas fa-code"></i></a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="cert-flip">
-        <div class="cert-flip-inner">
-          <div class="cert-front">
-            <p class="cert-platform-tag">Anthropic</p>
-            <p class="cert-title">Claude Code 101</p>
-            <p class="cert-issuer">Anthropic</p>
+    </div>
+
+    <!-- Anthropic -->
+    <div class="cert-group" id="cg-anthropic">
+      <div class="cert-group-header" onclick="toggleCertGroup('cg-anthropic')">
+        <span class="cert-platform-title">Anthropic</span>
+        <i class="fas fa-chevron-down cert-group-chevron"></i>
+      </div>
+      <p class="cert-names-preview">Claude 101 · Claude Code 101</p>
+      <div class="cert-group-body">
+        <div class="cert-grid">
+          <div class="cert-flip">
+            <div class="cert-flip-inner">
+              <div class="cert-front">
+                <p class="cert-title">Claude 101</p>
+                <p class="cert-issuer">Anthropic</p>
+              </div>
+              <div class="cert-back">
+                <p class="cert-back-label">Topics</p>
+                <p class="cert-back-topics">Introduction to Claude's capabilities, prompt engineering fundamentals, responsible AI use</p>
+              </div>
+            </div>
           </div>
-          <div class="cert-back">
-            <p class="cert-back-label">Topics</p>
-            <p class="cert-back-topics">AI-assisted software engineering with Claude Code, agentic workflows, coding best practices</p>
+          <div class="cert-flip">
+            <div class="cert-flip-inner">
+              <div class="cert-front">
+                <p class="cert-title">Claude Code 101</p>
+                <p class="cert-issuer">Anthropic</p>
+              </div>
+              <div class="cert-back">
+                <p class="cert-back-label">Topics</p>
+                <p class="cert-back-topics">AI-assisted software engineering with Claude Code, agentic workflows, coding best practices</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -553,6 +583,7 @@
 
       <!-- Patent -->
       <div class="ach-card">
+        <img class="ach-card-img" src="portfolio_material/Achievements/pump_patent.png" alt="Pump Patent">
         <div class="ach-front">
           <div class="ach-icon"><i class="fas fa-certificate"></i></div>
           <p class="ach-name">Patent — Pump Set Motor Assembly</p>
@@ -580,6 +611,7 @@
 
       <!-- FISITA -->
       <div class="ach-card">
+        <img class="ach-card-img" src="portfolio_material/Achievements/FISITA.png" alt="FISITA">
         <div class="ach-front">
           <div class="ach-icon"><i class="fas fa-award"></i></div>
           <p class="ach-name">FISITA Travel Bursary Award</p>
@@ -593,6 +625,7 @@
 
       <!-- Institute Color -->
       <div class="ach-card">
+        <img class="ach-card-img" src="portfolio_material/Achievements/institute_color_cropped.png" alt="Institute Color">
         <div class="ach-front">
           <div class="ach-icon"><i class="fas fa-medal"></i></div>
           <p class="ach-name">Institute Color for Sports</p>
@@ -606,7 +639,7 @@
 
       <!-- Best Athlete -->
       <div class="ach-card">
-        <img class="ach-card-img" src="portfolio_material/Sports/bestathlete.JPG" alt="Best Athlete">
+        <img class="ach-card-img" src="portfolio_material/Achievements/bestathlete.JPG" alt="Best Athlete">
         <div class="ach-front">
           <div class="ach-icon"><i class="fas fa-running"></i></div>
           <p class="ach-name">Best Athlete — ITUSA</p>
@@ -620,6 +653,7 @@
 
       <!-- PMSS -->
       <div class="ach-card">
+        <img class="ach-card-img" src="portfolio_material/Achievements/prime_minister_scholarship_scheme.png" alt="Prime Minister's Scholarship">
         <div class="ach-front">
           <div class="ach-icon"><i class="fas fa-scroll"></i></div>
           <p class="ach-name">Prime Minister's Scholarship</p>
@@ -649,139 +683,139 @@
 
     <!-- Athletics -->
     <div class="sports-panel active" id="tab-athletics">
-      <div class="sports-media-row">
-        <div class="sports-img-card">
-          <img src="portfolio_material/Sports/athleticsfirstyear.jpg" alt="First year athletics">
-          <div class="sports-img-caption">1st Year — Best Athlete</div>
+
+      <!-- Collapsed: cycling preview -->
+      <div class="sports-preview">
+        <div class="sports-cycle-img-wrap">
+          <img class="sports-cycle-img" id="sci-athletics" src="portfolio_material/Sports/athleticsfirstyear.jpg" alt="Athletics">
+          <p class="sports-cycle-caption" id="scc-athletics">1st Year — Best Athlete</p>
         </div>
-        <div class="sports-img-card">
-          <img src="portfolio_material/Sports/athleticssecondyear.png" alt="Second year athletics">
-          <div class="sports-img-caption">2nd Year — ITUSA Meet</div>
-        </div>
-        <div class="sports-img-card">
-          <img src="portfolio_material/Sports/athleticsfinal.JPG" alt="Final year athletics">
-          <div class="sports-img-caption">Final Year — Captain</div>
-        </div>
-        <div class="sports-img-card">
-          <img src="portfolio_material/Sports/bestathlete.JPG" alt="Best Athlete award">
-          <div class="sports-img-caption">Best Athlete — Newspaper</div>
+        <div class="sports-cycle-event">
+          <p class="event-name" id="scen-athletics">68th PEC Annual Athletic Meet</p>
+          <p class="event-result" id="scer-athletics">Best Athlete · 800m Gold · 400m Gold · 400m Hurdles Gold · 1500m Silver</p>
         </div>
       </div>
 
-      <ul class="event-list">
-        <li class="event-item">
-          <div class="event-dot"></div>
-          <div>
+      <!-- Expanded: all photos + full event list -->
+      <div class="sports-full">
+        <div class="sports-media-row">
+          <div class="sports-img-card">
+            <img src="portfolio_material/Sports/athleticsfirstyear.jpg" alt="First year athletics">
+            <div class="sports-img-caption">1st Year — Best Athlete</div>
+          </div>
+          <div class="sports-img-card">
+            <img src="portfolio_material/Sports/athleticssecondyear.png" alt="Second year athletics">
+            <div class="sports-img-caption">2nd Year — ITUSA Meet</div>
+          </div>
+          <div class="sports-img-card">
+            <img src="portfolio_material/Sports/athleticsfinal.JPG" alt="Final year athletics">
+            <div class="sports-img-caption">Final Year — Captain</div>
+          </div>
+          <div class="sports-img-card">
+            <img src="portfolio_material/Sports/bestathlete.JPG" alt="Best Athlete award">
+            <div class="sports-img-caption">Best Athlete — Newspaper</div>
+          </div>
+        </div>
+        <ul class="event-list">
+          <li class="event-item"><div class="event-dot"></div><div>
             <p class="event-name">68th PEC Annual Athletic Meet</p>
             <p class="event-result">Best Athlete · 800m Gold · 400m Gold · 400m Hurdles Gold · 1500m Silver</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot"></div><div>
             <p class="event-name">Inter-Technology Universities Athletic Meet 2014–15</p>
             <p class="event-result">Best Athlete · 800m Gold · 400m Gold · 1500m Silver</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot"></div><div>
             <p class="event-name">Urja SportsFest 2015 — Thapar University</p>
             <p class="event-result">800m Silver</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot"></div><div>
             <p class="event-name">8th PEC Mini Marathon</p>
             <p class="event-result">10th of 150+ participants</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot"></div><div>
             <p class="event-name">69th PEC Annual Athletic Meet</p>
             <p class="event-result">400m Hurdles Silver · 800m Bronze</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot"></div><div>
             <p class="event-name">Inter-Technology Universities Athletic Meet 2015–16</p>
             <p class="event-result">800m Silver · 1500m Bronze · 4×400m Relay Bronze</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot"></div><div>
             <p class="event-name">9th PEC Mini Marathon</p>
             <p class="event-result">7th of 200+ participants · Certificate of Appreciation</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot"></div><div>
             <p class="event-name">71st PEC Annual Athletic Meet — Captain</p>
             <p class="event-result">800m Gold · 4×400m Relay Gold (Record: 48.6s) · 400m Bronze · 1500m Bronze</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot"></div><div>
             <p class="event-name">Inter-Technology Universities Athletic Meet 2017–18</p>
             <p class="event-result">800m Silver · 4×400m Relay Silver · 400m Bronze</p>
-          </div>
-        </li>
-      </ul>
+          </div></li>
+        </ul>
+      </div>
+
+      <div class="sports-toggle" onclick="toggleSports('athletics')">
+        <span class="sports-toggle-label"></span>
+        <i class="fas fa-chevron-down sports-toggle-chevron"></i>
+      </div>
     </div>
 
     <!-- Basketball -->
     <div class="sports-panel" id="tab-basketball">
-      <div class="sports-media-row">
-        <div class="sports-img-card">
-          <img src="portfolio_material/Sports/firstyearbb.jpg" alt="First year basketball">
-          <div class="sports-img-caption">1st Year — ITUSA 3rd</div>
+
+      <!-- Collapsed: cycling preview -->
+      <div class="sports-preview">
+        <div class="sports-cycle-img-wrap">
+          <img class="sports-cycle-img" id="sci-basketball" src="portfolio_material/Sports/firstyearbb.jpg" alt="Basketball">
+          <p class="sports-cycle-caption" id="scc-basketball">1st Year — ITUSA 3rd</p>
         </div>
-        <div class="sports-img-card">
-          <img src="portfolio_material/Sports/bb.png" alt="Basketball">
-          <div class="sports-img-caption">Final Year — Captain</div>
-        </div>
-        <div class="sports-img-card" style="cursor:pointer;" onclick="this.querySelector('video').play()">
-          <video src="portfolio_material/Sports/layup.mp4" loop muted playsinline style="pointer-events:none;"></video>
-          <div class="sports-img-caption">Layup — hover/tap to play</div>
-        </div>
-        <div class="sports-img-card">
-          <img src="portfolio_material/Sports/sports.png" alt="Sports">
-          <div class="sports-img-caption">College Sports</div>
+        <div class="sports-cycle-event">
+          <p class="event-name" id="scen-basketball">Inter-Technology Universities Basketball 2014–15</p>
+          <p class="event-result" id="scer-basketball" style="color:var(--blue)">3rd Position</p>
         </div>
       </div>
 
-      <ul class="event-list">
-        <li class="event-item">
-          <div class="event-dot" style="background:var(--blue)"></div>
-          <div>
+      <!-- Expanded: all photos + full event list -->
+      <div class="sports-full">
+        <div class="sports-media-row">
+          <div class="sports-img-card">
+            <img src="portfolio_material/Sports/firstyearbb.jpg" alt="First year basketball">
+            <div class="sports-img-caption">1st Year — ITUSA 3rd</div>
+          </div>
+          <div class="sports-img-card">
+            <img src="portfolio_material/Sports/bb.png" alt="Basketball">
+            <div class="sports-img-caption">Final Year — Captain</div>
+          </div>
+          <div class="sports-video-card" id="bball-video-card">
+            <video id="bball-video" src="portfolio_material/Sports/layup.mp4" muted playsinline></video>
+            <div class="sports-img-caption">Layup</div>
+            <div class="sports-video-overlay" id="bball-video-overlay" onclick="playBballVideo()">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="event-list">
+          <li class="event-item"><div class="event-dot" style="background:var(--blue)"></div><div>
             <p class="event-name">Inter-Technology Universities Basketball 2014–15</p>
             <p class="event-result" style="color:var(--blue)">3rd Position</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot" style="background:var(--blue)"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot" style="background:var(--blue)"></div><div>
             <p class="event-name">Inter-Technology Universities Basketball 2017–18 — Captain</p>
             <p class="event-result" style="color:var(--blue)">3rd Position</p>
-          </div>
-        </li>
-        <li class="event-item">
-          <div class="event-dot" style="background:var(--blue)"></div>
-          <div>
+          </div></li>
+          <li class="event-item"><div class="event-dot" style="background:var(--blue)"></div><div>
             <p class="event-name">Akhada SportsFest 2018 — UILS, Punjab University</p>
             <p class="event-result" style="color:var(--blue)">2nd Position</p>
-          </div>
-        </li>
-      </ul>
-      <p style="margin-top:1.5rem; font-family:'JetBrains Mono',monospace; font-size:.8rem; color:var(--blue); font-style:italic;">
-        "Basketball is a lifelong game. You continue to learn from the game day in and day out, and all along the way, you get better." — Scottie Pippen
-      </p>
+          </div></li>
+        </ul>
+      </div>
+
+      <div class="sports-toggle" onclick="toggleSports('basketball')">
+        <span class="sports-toggle-label"></span>
+        <i class="fas fa-chevron-down sports-toggle-chevron"></i>
+      </div>
     </div>
 
   </div>
@@ -860,14 +894,14 @@
       </div>
       <div class="col-lg-4">
         <h4>Built By</h4>
-        <p class="lead mb-0">Ujjwal Kalkhande with Claude Code</p>
+        <p class="lead mb-0">Ujjwal Kalkhande · Built with Claude Code <img src="img/claude_code_mascot.png" alt="Claude Code" class="footer-ai-icon"></p>
       </div>
     </div>
   </div>
 </footer>
 <section class="copyright py-4 text-center">
   <div class="container">
-    <small>&copy; Ujjwal Kalkhande</small>
+    <small>&copy; 2026 Ujjwal Kalkhande</small>
   </div>
 </section>
 
@@ -896,13 +930,164 @@
     card.classList.toggle('open');
   }
 
+  // Accordion: Certifications
+  function toggleCertGroup(id) {
+    document.getElementById(id).classList.toggle('open');
+  }
+
+  // ── Sports cycling data ───────────────────────────────────
+  var SPORTS_DATA = {
+    athletics: {
+      images: [
+        { src: 'portfolio_material/Sports/athleticsfirstyear.jpg',   cap: '1st Year — Best Athlete' },
+        { src: 'portfolio_material/Sports/athleticssecondyear.png',  cap: '2nd Year — ITUSA Meet' },
+        { src: 'portfolio_material/Sports/athleticsfinal.JPG',       cap: 'Final Year — Captain' },
+        { src: 'portfolio_material/Sports/bestathlete.JPG',          cap: 'Best Athlete — Newspaper' }
+      ],
+      events: [
+        { name: '68th PEC Annual Athletic Meet',                        result: 'Best Athlete · 800m Gold · 400m Gold · 400m Hurdles Gold · 1500m Silver' },
+        { name: 'Inter-Technology Universities Athletic Meet 2014–15',  result: 'Best Athlete · 800m Gold · 400m Gold · 1500m Silver' },
+        { name: 'Urja SportsFest 2015 — Thapar University',            result: '800m Silver' },
+        { name: '8th PEC Mini Marathon',                               result: '10th of 150+ participants' },
+        { name: '69th PEC Annual Athletic Meet',                       result: '400m Hurdles Silver · 800m Bronze' },
+        { name: 'Inter-Technology Universities Athletic Meet 2015–16', result: '800m Silver · 1500m Bronze · 4×400m Relay Bronze' },
+        { name: '9th PEC Mini Marathon',                               result: '7th of 200+ participants · Certificate of Appreciation' },
+        { name: '71st PEC Annual Athletic Meet — Captain',             result: '800m Gold · 4×400m Relay Gold (Record: 48.6s) · 400m Bronze · 1500m Bronze' },
+        { name: 'Inter-Technology Universities Athletic Meet 2017–18', result: '800m Silver · 4×400m Relay Silver · 400m Bronze' }
+      ]
+    },
+    basketball: {
+      images: [
+        { src: 'portfolio_material/Sports/firstyearbb.jpg', cap: '1st Year — ITUSA 3rd' },
+        { src: 'portfolio_material/Sports/bb.png',          cap: 'Final Year — Captain' },
+        { src: 'portfolio_material/Sports/sports.png',      cap: 'College Sports' }
+      ],
+      events: [
+        { name: 'Inter-Technology Universities Basketball 2014–15',          result: '3rd Position' },
+        { name: 'Inter-Technology Universities Basketball 2017–18 — Captain', result: '3rd Position' },
+        { name: 'Akhada SportsFest 2018 — UILS, Punjab University',          result: '2nd Position' }
+      ]
+    }
+  };
+
+  var EVT_MS  = 2000;   // achievement changes every 2 s
+  var IMG_MS  = 4000;   // image changes every 4 s  (2×)
+  var FADE_MS = 200;    // cross-fade duration
+
+  var _timers = {};
+  var _idx    = { athletics: { img: 0, evt: 0 }, basketball: { img: 0, evt: 0 } };
+
+  function _fade(el, fn) {
+    el.style.transition = 'opacity ' + FADE_MS + 'ms ease';
+    el.style.opacity = '0';
+    setTimeout(function() { fn(); el.style.opacity = '1'; }, FADE_MS);
+  }
+
+  function _applyImg(tab) {
+    var d   = SPORTS_DATA[tab];
+    var img = document.getElementById('sci-' + tab);
+    var cap = document.getElementById('scc-' + tab);
+    if (!img) return;
+    var item = d.images[_idx[tab].img];
+    _fade(img, function() { img.src = item.src; cap.textContent = item.cap; });
+  }
+
+  function _applyEvt(tab) {
+    var d  = SPORTS_DATA[tab];
+    var nm = document.getElementById('scen-' + tab);
+    var rs = document.getElementById('scer-' + tab);
+    if (!nm) return;
+    var item = d.events[_idx[tab].evt];
+    _fade(nm, function() { nm.textContent = item.name; rs.textContent = item.result; });
+  }
+
+  function startSportsCycle(tab) {
+    if (_timers[tab]) return;
+    _timers[tab] = {
+      evt: setInterval(function() {
+        _idx[tab].evt = (_idx[tab].evt + 1) % SPORTS_DATA[tab].events.length;
+        _applyEvt(tab);
+      }, EVT_MS),
+      img: setInterval(function() {
+        _idx[tab].img = (_idx[tab].img + 1) % SPORTS_DATA[tab].images.length;
+        _applyImg(tab);
+      }, IMG_MS)
+    };
+  }
+
+  function stopSportsCycle(tab) {
+    if (_timers[tab]) {
+      clearInterval(_timers[tab].evt);
+      clearInterval(_timers[tab].img);
+      _timers[tab] = null;
+    }
+  }
+
+  // ── Basketball video: auto-play 3× on expand ─────────────
+  var _bballPlays = 0;
+
+  function _initBballVideo() {
+    var video = document.getElementById('bball-video');
+    if (!video || video._inited) return;
+    video._inited = true;
+    video.addEventListener('ended', function () {
+      _bballPlays++;
+      if (_bballPlays < 3) {
+        video.currentTime = 0;
+        video.play();
+      } else {
+        document.getElementById('bball-video-overlay').classList.add('visible');
+      }
+    });
+  }
+
+  function playBballVideo() {
+    var video   = document.getElementById('bball-video');
+    var overlay = document.getElementById('bball-video-overlay');
+    if (!video) return;
+    _bballPlays = 0;
+    overlay.classList.remove('visible');
+    video.currentTime = 0;
+    video.play();
+  }
+
+  function toggleSports(tab) {
+    var panel = document.getElementById('tab-' + tab);
+    var opening = panel.classList.toggle('open');
+    if (opening) {
+      stopSportsCycle(tab);
+      if (tab === 'basketball') {
+        _initBballVideo();
+        _bballPlays = 0;
+        var overlay = document.getElementById('bball-video-overlay');
+        if (overlay) overlay.classList.remove('visible');
+        setTimeout(function () {
+          var v = document.getElementById('bball-video');
+          if (v) { v.currentTime = 0; v.play(); }
+        }, 80);
+      }
+    } else {
+      var v = document.getElementById('bball-video');
+      if (v) v.pause();
+      startSportsCycle(tab);
+    }
+  }
+
   // Sports tabs
   function switchTab(name) {
+    ['athletics', 'basketball'].forEach(function(t) { stopSportsCycle(t); });
     document.querySelectorAll('.sports-tab').forEach(function(t) { t.classList.remove('active'); });
-    document.querySelectorAll('.sports-panel').forEach(function(p) { p.classList.remove('active'); });
-    document.getElementById('tab-' + name).classList.add('active');
+    document.querySelectorAll('.sports-panel').forEach(function(p) {
+      p.classList.remove('active');
+      p.classList.remove('open');
+    });
     event.currentTarget.classList.add('active');
+    document.getElementById('tab-' + name).classList.add('active');
+    startSportsCycle(name);
   }
+
+  // kick off cycling for the default active tab
+  startSportsCycle('athletics');
 </script>
 </body>
 </html>

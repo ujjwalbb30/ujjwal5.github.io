@@ -498,8 +498,8 @@ img { max-width: 100%; height: auto; }
   /* constrain size without cropping — browser maintains aspect ratio */
   width: auto !important;
   height: auto !important;
-  max-width: 180px !important;
-  max-height: 200px !important;
+  max-width: 270px !important;
+  max-height: 300px !important;
   border-radius: 6px;
   border: 1px solid var(--gold-border);
   background: var(--surface2);
@@ -513,6 +513,11 @@ img { max-width: 100%; height: auto; }
 /* image on the right instead of left */
 .work-project-row.img-right {
   grid-template-columns: 1fr auto;
+}
+/* larger image variant — 2× the default max dimensions */
+.work-project-row.img-lg .work-project-row-img {
+  max-width: 405px !important;
+  max-height: 450px !important;
 }
 
 /* ── Education ───────────────────────────────────────────── */
@@ -631,11 +636,19 @@ img { max-width: 100%; height: auto; }
 /* ── Certifications ──────────────────────────────────────── */
 #certifications { background: var(--surface) !important; }
 
+/* collapsible cert group */
+.cert-group { margin-bottom: .25rem; }
+
+.cert-group-header {
+  display: flex; align-items: center;
+  cursor: pointer; padding: .4rem 0;
+  gap: .75rem;
+}
 .cert-platform-title {
   font-family: 'JetBrains Mono', monospace;
   font-size: .72rem; letter-spacing: .15em;
   text-transform: uppercase; color: var(--gold);
-  margin-bottom: 1rem; margin-top: 2rem;
+  margin: 0; flex: 1;
   display: flex; align-items: center; gap: .75rem;
 }
 .cert-platform-title::after {
@@ -643,7 +656,23 @@ img { max-width: 100%; height: auto; }
   flex: 1; height: 1px;
   background: linear-gradient(90deg, var(--gold-border), transparent);
 }
-.cert-platform-title:first-child { margin-top: 0; }
+.cert-group-chevron {
+  color: var(--gold); font-size: .75rem; flex-shrink: 0;
+  transition: transform .3s ease;
+}
+.cert-group.open .cert-group-chevron { transform: rotate(180deg); }
+
+/* collapsed: show course names, hide grid */
+.cert-names-preview {
+  font-size: .78rem; color: var(--text2);
+  padding: .35rem 0 .8rem;
+  line-height: 1.6;
+}
+.cert-group.open .cert-names-preview { display: none; }
+
+/* expanded grid */
+.cert-group-body { max-height: 0; overflow: hidden; }
+.cert-group.open .cert-group-body { max-height: 9999px; padding-bottom: 1.25rem; }
 
 .cert-grid {
   display: grid;
@@ -708,8 +737,15 @@ img { max-width: 100%; height: auto; }
 .cert-back-topics {
   font-size: .78rem; color: var(--text2);
   line-height: 1.55; flex: 1;
-  overflow: hidden;
+  overflow-y: auto;
 }
+.cert-back-list {
+  margin: 0; padding-left: 1rem; flex: 1;
+  overflow-y: auto;
+  font-size: .78rem; color: var(--text2); line-height: 1.7;
+}
+.cert-back-list li { margin-bottom: .2rem; }
+.cert-back-list li::marker { color: var(--gold); }
 
 /* ── Achievements ────────────────────────────────────────── */
 #achievements { background: var(--bg) !important; }
@@ -817,6 +853,56 @@ img { max-width: 100%; height: auto; }
 .sports-panel { display: none; }
 .sports-panel.active { display: block; }
 
+/* ── Sports collapsed preview ───────────────────────────── */
+.sports-preview {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: .75rem 0 .5rem;
+}
+.sports-panel.open .sports-preview { display: none; }
+
+.sports-cycle-img-wrap { flex: 0 0 200px; text-align: center; }
+.sports-cycle-img {
+  width: 200px; height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--gold-border);
+}
+.sports-cycle-caption {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .7rem; color: var(--muted);
+  margin-top: .4rem;
+}
+.sports-cycle-event { flex: 1; }
+.sports-cycle-event .event-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600; font-size: .9rem;
+  color: var(--text); margin-bottom: .35rem;
+}
+.sports-cycle-event .event-result {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .78rem; color: var(--gold);
+}
+
+/* ── Sports expanded content ────────────────────────────── */
+.sports-full { max-height: 0; overflow: hidden; }
+.sports-panel.open .sports-full { max-height: 9999px; }
+
+/* ── Sports expand/collapse toggle ─────────────────────── */
+.sports-toggle {
+  display: flex; align-items: center; justify-content: center; gap: .5rem;
+  cursor: pointer; padding: .6rem 0 .2rem;
+  border-top: 1px solid var(--gold-border); margin-top: .75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .7rem; color: var(--gold);
+  user-select: none;
+}
+.sports-toggle-label::before { content: 'Show All'; }
+.sports-panel.open .sports-toggle-label::before { content: 'Show Less'; }
+.sports-toggle-chevron { transition: transform .3s ease; font-size: .72rem; }
+.sports-panel.open .sports-toggle-chevron { transform: rotate(180deg); }
+
 /* Sports media card */
 .sports-media-row {
   display: grid;
@@ -847,6 +933,36 @@ img { max-width: 100%; height: auto; }
   opacity: 0; transition: opacity var(--t);
 }
 .sports-img-card:hover .sports-img-caption { opacity: 1; }
+
+/* Basketball video card — natural aspect ratio, no crop */
+.sports-video-card {
+  position: relative;
+  border-radius: 4px; overflow: hidden;
+  border: 1px solid var(--gold-border);
+  height: 180px; /* same as .sports-img-card */
+  background: #000;
+}
+.sports-video-card video {
+  width: 100%; height: 100%;
+  display: block;
+  object-fit: contain; /* no crop — letterbox if needed */
+  filter: brightness(.85);
+}
+.sports-video-overlay {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(7,9,15,0.45);
+  cursor: pointer; border-radius: 4px;
+  opacity: 0; pointer-events: none;
+  transition: opacity .3s ease;
+}
+.sports-video-overlay.visible {
+  opacity: 1; pointer-events: auto;
+}
+.sports-video-overlay i {
+  font-size: 2.5rem; color: var(--gold);
+  filter: drop-shadow(0 0 12px var(--gold-glow));
+}
 
 /* Event timeline */
 .event-list { list-style: none; padding: 0; margin: 0; }
@@ -959,6 +1075,19 @@ footer.footer .lead, footer.footer p { color: var(--text2) !important; font-size
 }
 .copyright { background: var(--bg) !important; }
 .copyright small { font-size: .75rem; color: var(--muted); }
+
+@keyframes ai-pulse {
+  0%, 100% { opacity: 0.7; filter: drop-shadow(0 0 3px var(--gold-glow)); transform: scale(1); }
+  50%       { opacity: 1;   filter: drop-shadow(0 0 8px var(--gold));      transform: scale(1.08); }
+}
+.footer-ai-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-left: 5px;
+  vertical-align: middle;
+  animation: ai-pulse 2s ease-in-out infinite;
+}
 
 /* ── Scroll to top ───────────────────────────────────────── */
 .scroll-to-top a {
